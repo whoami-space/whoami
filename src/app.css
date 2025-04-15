@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@plugin 'flowbite/plugin';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+   /*Base theme for customization*/
+  --color-1: black;
+  --color-2: white;
+  --color-3: #ff914d;
+  /*Font Size*/
+  --text-minimal: 1rem;
+  --text-medium: 1.5rem;
+  --text-maximal: 2.5rem;
+  /*Spacing*/
+  --spacing-minimal: 1rem;
+  --spacing-medium: 3rem;
+  --spacing-maximal: 5rem;
+  /*To apply font use*/
+  --font-applyed: "Quicksand", monospace;
+}
+
+@source "../node_modules/flowbite-svelte/dist";
+
+
+* h1, h2, h3 {
+  font-weight: bold;
+}
