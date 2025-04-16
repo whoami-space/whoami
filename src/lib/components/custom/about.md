@@ -17,3 +17,8 @@ d1link; d2link; d3link;
 
 Description: Used to refrence someone words in a block of text, a picture, person's name and it's work life path.
 Props: description; picture; author; ocupation;
+
+## Main
+
+Description: Main content from any pages with customization for layouts and more.
+Props: custom

@@ -1,6 +1,6 @@
 # About sloted components
 
-Sloted compoonents are components from any frameworks or libraries that are adapted to be used in a long term project customization. They're use is when it's necessary to put a data or other into an specific component, it's called slot. 
+Components that allows user to put a data between the tags that were imported from own component. It uses <slot/> tag to allow the customization, the diference to custom components is that sloted components don't pass proprieties in code, just a slot. Examples: Buttons, 
 
 # Components and specific data
 

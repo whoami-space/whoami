@@ -7,13 +7,13 @@
   </script>
   
   <ButtonGroup>
-    <Button class="bg-2 text-3" >
+    <Button class="bg-2 text-3 font-bold" >
         <a href={d1link} class="">{ d1 }</a>
     </Button>
-    <Button  class="bg-2 text-3" >
+    <Button  class="bg-2 text-3 font-bold" >
        <a href={d2link} class="">{ d2 }</a>
     </Button>
-    <Button  class="bg-2 text-3" >
+    <Button  class="bg-2 text-3 font-bold" >
        <a href={d3link} class="">{ d3 }</a>
     </Button>
   </ButtonGroup>
