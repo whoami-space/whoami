@@ -1,7 +1,6 @@
 <script>
     import { Marquee } from "flowbite-svelte";
     import Blockquote from "../custom/Blockquote.svelte";
-    import InlineNavigation from "../custom/InlineNavigation.svelte";
     import { CheckCircleSolid, ChevronDoubleDownOutline } from "flowbite-svelte-icons";
 
 </script>
@@ -16,10 +15,11 @@
         </Marquee>
 
         <ul class="p-medium flex flex-wrap justify-center items-center">
-            <li class="flex justify-center items-center gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" /> Tools for self knowledge</li>
-            <li class="flex justify-center items-center gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" /> All based on psychological theories</li>
-            <li class="flex justify-center items-center gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" />Completely free</li>
+            <li class="flex justify-center items-center gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" /> Explore self knowledge</li>
+            <li class="flex justify-center items-center  gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" /> Learn psychological theories</li>
+            <li class="flex justify-center items-center  gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" />All in totaly free way</li>
         </ul>
+       
         <ChevronDoubleDownOutline class="m-minimal w-medium h-medium" />
         <ChevronDoubleDownOutline class="m-minimal w-medium h-medium opacity-[.6]" />
         <ChevronDoubleDownOutline class="m-minimal mb-medium w-medium h-medium opacity-[.3]" />
@@ -34,13 +34,6 @@
         <Blockquote description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither" author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/>
     </div>
 
-    <div  id="abstract" >
-        <div class="scroll-mt-medium flex flex-col justify-center items-center mt-maximal gap-medium" >
-            <h1 class="text-maximal text-center">Get to know your <i class="text-3" >SELF</i></h1>
-            <p class="text-center" >This website is a non-profit tool for anyone who wants to learn more about psychological theories in general. It's mission is to help people to learn more about themselves in an abstract way. In addition to a greater understanding of theories, there are also different tools that will help on the journey of self-knowledge, a long journey but one that will make you feel more fulfilled and authentic.</p>
-            <InlineNavigation d1="About" d2="Explore" d3="Go to top" d3link="#top"/>
-        </div>
-    </div>
 
 
 <style>

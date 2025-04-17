@@ -1,14 +1,19 @@
 <script>
     import { Popover, Dropdown, DropdownItem } from 'flowbite-svelte';
-    import { ChevronDownOutline, ChevronRightOutline, GridPlusSolid } from 'flowbite-svelte-icons';;
+    import { ChevronDownOutline, ChevronRightOutline, GridPlusSolid, PaperPlaneOutline, CogOutline } from 'flowbite-svelte-icons';
+    import Cookies from '../sloted/Cookies.svelte';
+    
+
   </script>
   
   <header class="flex w-full pt-medium px-medium justify-around items-center gap-minimal" >
-    <a href="" class="font-bold underline decoration-2">Explore</a>
+    <a href="/explore" class="font-bold underline decoration-2 max-w-medium">Explore</a>
+    
+    <a href="/about" class="font-bold underline decoration-2 max-w-medium">About</a>
     <div id="b1">
         <button class="w-medium h-medium rounded-full border-[0] flex justify-center items-center"><GridPlusSolid class="text-3 w-10 h-10" /></button>
-      </div>
-    <a href="" class="font-bold underline decoration-2">About</a>
+      </div> 
+      
   </header>
 
 <div class="z-[10000]" >
@@ -26,10 +31,8 @@
                     <ChevronRightOutline/>
                 </a>    
             </li>
-
+            
         </ul>
     </Popover>
 </div>
-
-
 
