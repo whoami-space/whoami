@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
+/* @plugin '@tailwindcss/forms';89*/
 @plugin '@tailwindcss/typography';
 
 @plugin 'flowbite/plugin';
@@ -33,4 +33,10 @@
 ::selection {
   background-color: white;
   color: black;
+}
+
+* {
+  outline-offset:0 !important;
+  outline-color:orange !important;
+  border-color: orange;
 }
