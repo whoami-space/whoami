@@ -8,8 +8,6 @@
   
   <header class="flex w-full pt-medium px-medium justify-around items-center gap-minimal" >
     <a href="/explore" class="font-bold underline decoration-2 max-w-medium">Explore</a>
-    
-    <a href="/about" class="font-bold underline decoration-2 max-w-medium">About</a>
     <div id="b1">
         <button class="w-medium h-medium rounded-full border-[0] flex justify-center items-center"><GridPlusSolid class="text-3 w-10 h-10" /></button>
       </div> 
@@ -26,8 +24,14 @@
                 </a>    
             </li>
             <li>
+                <a  class="flex items-center p-[5px]"  href="/about">
+                    <b>About</b>
+                    <ChevronRightOutline/>
+                </a>    
+            </li>
+            <li>
                 <a  class="flex items-center p-[5px]"  href="/component-testing">
-                    <b>Components Test</b>
+                    <b>Components</b>
                     <ChevronRightOutline/>
                 </a>    
             </li>
