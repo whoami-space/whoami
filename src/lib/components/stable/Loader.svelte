@@ -3,18 +3,28 @@
 <script>
     import { page } from '$app/state';
     import { TextPlaceholder } from 'flowbite-svelte';
+    import { GlobeSolid } from 'flowbite-svelte-icons';
+    
+    
     
     let pageurl = page.url;
 
 </script>
 
 
-<div class="z-[90000000000000000000000000000] loader absolute top-[0] w-[100vw] h-[100vh] bg-1 p-maximal flex flex-col justify-center gap-medium text-1 bg-2">
-    <h2 class="text-medium animate-pulse text-1">Wait a sec...</h2>
+<div class="z-[90000000000000000000000000000] loader absolute top-[0] w-[100vw] h-[100vh] p-maximal flex flex-col gap-medium text-1 bg-2 overflow-hidden">
+    <div class="flex gap-minimal items-center">
+        <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="shadow-xl w-medium h-medium rounded-full">
+        <h2 class="text-medium animate-pulse">whoami.space</h2>
+    </div>
+   
     <TextPlaceholder class="" />
+
     {#if pageurl}
-    <p class="animate-pulse font-bold text-1 text-minimal" >You're in <br>  <u>{pageurl}</u></p>
+    <p class="animate-pulse font-bold text-minimal flex gap-minimal items-center" ><GlobeSolid/><u>{pageurl}</u></p>
     {/if}
+    
+    
 </div>
 
 

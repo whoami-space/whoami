@@ -4,15 +4,15 @@
 
 <div class="grid md:grid-cols-2 justify-center items-center gap-medium">
         <Card title="Mbti test" link="" >
-            <div class="flex flex-col items-center gap-minimal p-medium min-h-[50vh]">
+            <div class="flex flex-col items-center gap-minimal p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
                 <h2 class="text-1 text-medium" >
                     Description
                 </h2>
-                <p class="text-minimal text-1 text-justify" >The MBTI personality test is a test that weighs your personality on 4 key characteristics. It is one of the most relevant tests in psychology, second only to the BIG 5. Try it if you want to get a large perspective about yourself.</p>
+                <p class="text-minimal text-1 text-justify" >The MBTI personality test is a test that weighs your personality on 4 key characteristics. It is one of the most relevant tests in psychology, second only to the BIG 5. Try it if you want to get a large perspective about yourself.The MBTI personality test is a test that weighs your personality on 4 key characteristics. It is one of the most relevant tests in psychology, second only to the BIG 5. Try it if you want to get a large perspective about yourself. The MBTI personality test is a test that weighs your personality on 4 key characteristics. It is one of the most relevant tests in psychology, second only to the BIG 5. Try it if you want to get a large perspective about yourself.</p>
             </div>
         </Card>
         <Card title="Mbti test" link="" >
-            <div class="flex flex-col items-center gap-minimal p-medium min-h-[50vh]">
+            <div class="flex flex-col items-center gap-minimal p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
                 <h2 class="text-1 text-medium" >
                     Description
                 </h2>

@@ -39,4 +39,8 @@
   outline-offset:0 !important;
   outline-color:orange !important;
   border-color: orange;
+  scrollbar-color: orange black;
+  scrollbar-width: auto;
+
 }
+

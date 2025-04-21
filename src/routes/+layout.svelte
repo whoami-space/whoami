@@ -10,7 +10,7 @@
 	let { children } = $props();
 </script>
 
-<div id="app">
+<div class="overflow-x-hidden">
 	{#if host !== "localhost"}
 	<Loader/>
 	{/if}
