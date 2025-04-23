@@ -3,7 +3,8 @@
     import { QuoteSolid } from 'flowbite-svelte-icons';
 
     let {description, picture, author, ocupation} = $props()
-  </script>
+
+</script>
   
   <figure class="flex flex-col justify-center items-center gap-minimal text-2 text-medium p-medium">
     <QuoteSolid class="text-3 w-maximal" />

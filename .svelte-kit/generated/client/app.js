@@ -14,11 +14,12 @@ export const nodes = [
 export const server_loads = [];
 
 export const dictionary = {
-		"/": [3],
-		"/about": [4],
-		"/component-testing": [5],
-		"/contact": [6],
-		"/explore": [7,[2]]
+		"/": [2],
+		"/about": [3],
+		"/component-testing": [4],
+		"/contact": [5],
+		"/explore": [6],
+		"/explore/personality-tests/mbti": [7]
 	};
 
 export const hooks = {

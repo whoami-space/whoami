@@ -2,6 +2,25 @@
     import { Popover, Dropdown, DropdownItem } from 'flowbite-svelte';
     import { ChevronDownOutline, ChevronRightOutline, GridPlusSolid, PaperPlaneOutline, CogOutline } from 'flowbite-svelte-icons';
     import Cookies from '../sloted/Cookies.svelte';
+
+    let links = [
+        {
+            label: "Home page",
+            href: "/"
+        },
+        {
+            label: "Posts",
+            href: "/posts"
+        },
+        {
+            label: "MBTI Test",
+            href: "/explore/personality-tests/mbti"
+        },
+        {
+            label: "About",
+            href: "/about"
+        },
+    ]
     
 
   </script>
@@ -17,25 +36,14 @@
 <div class="z-[10000]" >
     <Popover class="max-w-64 text-minimal" triggeredBy="#b1">
         <ul class="flex flex-col justify-center text-3">
+            {#each links as link}
             <li>
-                <a  class="flex items-center p-[5px]"  href="/">
-                    <b>Home Page</b>
+                <a  class="flex items-center p-[5px]"  href={link.href}>
+                    <b>{link.label}</b>
                     <ChevronRightOutline/>
-                </a>    
+                </a>  
             </li>
-            <li>
-                <a  class="flex items-center p-[5px]"  href="/about">
-                    <b>About</b>
-                    <ChevronRightOutline/>
-                </a>    
-            </li>
-            <li>
-                <a  class="flex items-center p-[5px]"  href="/component-testing">
-                    <b>Components</b>
-                    <ChevronRightOutline/>
-                </a>    
-            </li>
-            
+            {/each}   
         </ul>
     </Popover>
 </div>
