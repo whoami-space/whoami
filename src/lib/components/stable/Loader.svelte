@@ -5,8 +5,6 @@
     import { TextPlaceholder } from 'flowbite-svelte';
     import { GlobeSolid } from 'flowbite-svelte-icons';
     
-    
-    
     let pageurl = page.url;
 
 </script>
@@ -21,7 +19,7 @@
     <TextPlaceholder class="" />
 
     {#if pageurl}
-    <p class="animate-pulse font-bold text-minimal flex gap-minimal items-center" ><GlobeSolid/><u>{pageurl}</u></p>
+    <p class="animate-pulse font-bold text-minimal flex gap-minimal items-center max-w-[60vw]" ><GlobeSolid/><u>{pageurl}<br/></u></p>
     {/if}
     
     

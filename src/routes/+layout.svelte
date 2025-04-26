@@ -4,14 +4,14 @@
 	import Footer from '$lib/components/stable/Footer.svelte';
 	import Loader from '$lib/components/stable/Loader.svelte';
     import { page } from '$app/state';
-
+	
 	let host = page.url.hostname
 	
 	let { children } = $props();
 </script>
 
 <div class="overflow-x-hidden">
-	{#if host !== "localhost"}
+	{#if host == "whoami.space"}
 	<Loader/>
 	{/if}
 	<div id="top" ></div>
@@ -22,5 +22,4 @@
 
 	<Footer/>
 </div>
-
 

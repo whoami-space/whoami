@@ -4,5 +4,6 @@
 	"/component-testing": [],
 	"/contact": [],
 	"/explore": [],
-	"/explore/personality-tests/mbti": []
+	"/explore/tests": [],
+	"/explore/tests/personality-tests/mbti": []
 }
