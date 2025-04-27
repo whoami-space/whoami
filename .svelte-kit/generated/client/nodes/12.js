@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/explore/tests/mbti/3/+page.svelte";

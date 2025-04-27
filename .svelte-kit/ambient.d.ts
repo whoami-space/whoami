@@ -116,6 +116,7 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const npm_config_version_tag_prefix: string;
 	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
+	export const YARN_WRAP_OUTPUT: string;
 	export const depsBuildBuild: string;
 	export const NPM_CONFIG_PREFIX: string;
 	export const npm_package_devDependencies_svelte_check: string;
@@ -200,6 +201,7 @@ declare module '$env/static/private' {
 	export const depsHostHostPropagated: string;
 	export const VSCODE_IPC_HOOK_CLI: string;
 	export const npm_config_init_version: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -321,6 +323,7 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		npm_config_version_tag_prefix: string;
 		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
+		YARN_WRAP_OUTPUT: string;
 		depsBuildBuild: string;
 		NPM_CONFIG_PREFIX: string;
 		npm_package_devDependencies_svelte_check: string;
@@ -405,6 +408,7 @@ declare module '$env/dynamic/private' {
 		depsHostHostPropagated: string;
 		VSCODE_IPC_HOOK_CLI: string;
 		npm_config_init_version: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
