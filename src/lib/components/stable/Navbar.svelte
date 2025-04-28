@@ -14,7 +14,7 @@
         },
         {
             label: "MBTI Test",
-            href: "/explore/personality-tests/mbti"
+            href: "/explore/tests/mbti"
         },
         {
             label: "About",

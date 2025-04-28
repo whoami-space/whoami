@@ -1,12 +1,12 @@
 import { goto } from "$app/navigation";
 import { page } from "$app/state";
-import { writable } from "svelte/store";
+import { get, writable } from "svelte/store";
 
 
-export function load() { 
+export async function load() { 
+
     return {
-    // Elements for counting
-      counter: 0,
+    
     // Data do create and navigate between the steps
       stepOne: writable(false),
       stepTwo: writable(false),
@@ -18,7 +18,6 @@ export function load() {
         goto(link)
       },
     // Other data
-
     
 
     };

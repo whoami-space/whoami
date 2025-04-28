@@ -27,7 +27,7 @@ export const dictionary = {
 		"/contact": [6],
 		"/explore": [7],
 		"/explore/tests": [8],
-		"/explore/tests/mbti": [9,[2]],
+		"/explore/tests/mbti": [9],
 		"/explore/tests/mbti/1": [10,[2]],
 		"/explore/tests/mbti/2": [11,[2]],
 		"/explore/tests/mbti/3": [12,[2]],
