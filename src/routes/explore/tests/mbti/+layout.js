@@ -5,6 +5,8 @@ import { get, writable } from "svelte/store";
 
 export async function load() { 
 
+    
+
     return {
     
     // Data do create and navigate between the steps
@@ -18,6 +20,8 @@ export async function load() {
         goto(link)
       },
     // Other data
+    counter: writable(0),
+    
     
 
     };

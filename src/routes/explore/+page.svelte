@@ -32,7 +32,7 @@
     </div>
     <div class="grid md:grid-cols-2 justify-center items-center gap-medium">
         {#each resources as resource}
-        <Card title={resource.title} link={resource.link} >
+        <Card label={resource.title} link={resource.link} >
             <div class="flex flex-col items-center gap-medium p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
                 <h2 class="text-1 text-medium" >
                     Description

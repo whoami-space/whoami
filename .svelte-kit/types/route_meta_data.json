@@ -6,6 +6,7 @@
 	"/explore": [],
 	"/explore/tests": [],
 	"/explore/tests/mbti": [
+		"src/routes/explore/tests/mbti/+layout.js",
 		"src/routes/explore/tests/mbti/+layout.js"
 	],
 	"/explore/tests/mbti/1": [
