@@ -54,11 +54,10 @@
         return counter;
 
     }
-   
-   
-    
-    
 
+    let next = data.answersOne.map(a => ( a )).every(a => a.selected != 0)
+
+    
 </script>
 
 
@@ -73,18 +72,29 @@
         <h2 class="text-medium text-center" >Feelings and social life</h2>
     </div>
 
-    <Label class="text-2">
-    When stressed i'm able to, the value is
-    <Select class="mt-2" items={countriesOne} bind:value={selectedOne} />
-     </Label>
-     <Label class="text-2 mb-minimal">
-        When stressed i'm able to, the value is
-        <Select class="mt-2" items={countriesTwo} bind:value={selectedTwo} />
-    </Label>
 
-    <button on:click={data.goTo("/explore/tests/mbti/2", data.stepTwo)} on:click={Counter([selectedOne, selectedTwo])} >
-        <ButtonSm>Next step</ButtonSm>
-    </button>
+    {#each data.answersOne.map(a => ( a )) as answer}
+
+    <Label class="text-2">
+        <Select class="mt-2" items={answer.options} bind:value={answer.selected} />
+     </Label>
+
+    {/each}
+
+    {#if next }
+        <button on:click={data.goTo("/explore/tests/mbti/2", data.stepTwo)} on:click={Counter([data.answersOne[1].selected])} >
+            <ButtonSm>Next step</ButtonSm>
+        </button>
+    {:else}
+        <button>
+            <ButtonSm>Next step</ButtonSm>
+        </button>
+    {/if}
+
+    
+
+    
+    
     
 {:else}
     { page.error.message }
