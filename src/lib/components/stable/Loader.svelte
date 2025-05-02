@@ -6,6 +6,7 @@
     import { GlobeSolid } from 'flowbite-svelte-icons';
     
     let pageurl = page.url;
+    let host = pageurl.hostname
 
 </script>
 
@@ -19,7 +20,7 @@
     <TextPlaceholder class="" />
 
     {#if pageurl}
-    <p class="animate-pulse font-bold text-minimal flex gap-minimal items-center max-w-[60vw]" ><GlobeSolid/><u>{pageurl}<br/></u></p>
+    <p class="animate-pulse font-bold text-minimal flex gap-minimal items-center max-w-[60vw]" ><GlobeSolid/><u>https://whoami.space<br/></u></p>
     {/if}
     
     

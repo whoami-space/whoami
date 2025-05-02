@@ -5,13 +5,14 @@
 	import Loader from '$lib/components/stable/Loader.svelte';
     import { page } from '$app/state';
 	
-	let host = page.url.hostname
+	let host = false //= page.url.hostname
 	
 	let { children } = $props();
+
 </script>
 
 <div class="overflow-x-hidden">
-	{#if host == "whoami.space"}
+	{#if host }
 	<Loader/>
 	{/if}
 	<div id="top" ></div>

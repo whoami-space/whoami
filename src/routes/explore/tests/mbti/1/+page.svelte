@@ -3,18 +3,18 @@
     
     // Sveltekit
     import { page } from '$app/state';
+    import { redirect } from '@sveltejs/kit';
     import { readable, writable } from 'svelte/store';
     import { goto } from '$app/navigation';
 
     // Flowbite
-    import { CaretRightSolid } from 'flowbite-svelte-icons';
+    import { CaretRightSolid, GoToNextCellOutline } from 'flowbite-svelte-icons';
     import { StepIndicator } from 'flowbite-svelte';
     import { Select, Label } from 'flowbite-svelte';
 
     // Components
     import ButtonSm from '$lib/components/sloted/ButtonSm.svelte';
     import Toast from '$lib/components/sloted/Toast.svelte';
-    import { applyAction } from '$app/forms';
 
     //Exporting data
     export let data;
@@ -51,23 +51,43 @@
         let toast = document.getElementById("toast")
         toast.classList.remove("hidden")
     }
+
+    // let k = 2
+    // if(k = 1) {
+    //    window.onclose
+    // }
+
+    
+    
+    async function confirmExit() {
+        alert("exiting");
+    }
+    window.onbeforeunload = confirmExit
+
+    window.onload = () => {
+        redirect(308, "/explore/tests/mbti/") 
+    }
+            
+
+    
+
+    
     
     
 </script>
 
-
-<div class="my-4 p-medium">
+<div class="p-medium">
     <StepIndicator {currentStep} {steps} color="yellow"  hideLabel size="h-4"/>
 </div>
 {#if data.stepOne }
-    <div class="flex flex-col gap-medium">
+    <div class="flex flex-col gap-medium mb-medium">
         <h1 class="text-maximal text-center" >Step 1</h1>
         <h2 class="text-medium text-center" >Feelings and social life</h2>
     </div>
     {#each data.selectsOne.map(a => ( a )) as i}
         <Label class="py-minimal text-2 felx flex-col gap-minimal">
             <p class="font-bold" >{i.question}</p>
-            <Select class="mt-2 text-2 bg-1 font-bold" placeholder={i.question} items={i.options} bind:value={i.selected} />
+            <Select class="mt-2 text-3 bg-1 font-bold" placeholder={i.question} items={i.options} bind:value={i.selected} />
         </Label>
     {/each}
     {#if next(data.selectsOne) }
