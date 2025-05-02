@@ -26,6 +26,7 @@ export async function load() {
       "Question 1", 
       "Question 2"
     ],
+    // Answers
     answersOne: [
         {
           options: [

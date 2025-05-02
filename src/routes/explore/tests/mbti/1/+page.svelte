@@ -3,7 +3,7 @@
     
     // Sveltekit
     import { page } from '$app/state';
-    import { writable } from 'svelte/store';
+    import { readable, writable } from 'svelte/store';
     import { goto } from '$app/navigation';
 
     // Flowbite
@@ -13,6 +13,7 @@
 
     // Components
     import ButtonSm from '$lib/components/sloted/ButtonSm.svelte';
+    import Toast from '$lib/components/sloted/Toast.svelte';
 
     //Exporting data
     export let data;
@@ -54,9 +55,28 @@
         return counter;
 
     }
+    // Next function
+    function next() {
 
-    let next = data.answersOne.map(a => ( a )).every(a => a.selected != 0)
+         let selected = data.answersOne.map(a => ( a ))
 
+         let condition = selected.every(a => a.selected != 0)
+
+         if ( condition ) {
+            return true
+         } else {
+            return false
+         }
+
+    }
+
+    // Other
+
+    let toast = () => {
+        let toast = document.getElementById("toast")
+        toast.classList.remove("hidden")
+    }
+    
     
 </script>
 
@@ -65,6 +85,9 @@
     <StepIndicator {currentStep} {steps} color="yellow"  hideLabel size="h-4"/>
 </div>
 {#if data.stepOne }
+
+
+    
 
 
     <div class="flex flex-col gap-medium">
@@ -81,21 +104,18 @@
 
     {/each}
 
-    {#if next }
+    {#if next() }
         <button on:click={data.goTo("/explore/tests/mbti/2", data.stepTwo)} on:click={Counter([data.answersOne[1].selected])} >
             <ButtonSm>Next step</ButtonSm>
         </button>
-    {:else}
-        <button>
+    {:else} 
+        <button on:click={toast()} >
             <ButtonSm>Next step</ButtonSm>
         </button>
+        <div class="hidden" id="toast">
+            <Toast custom="toast toast my-minimal" >Please select all options</Toast>
+        </div>
     {/if}
-
-    
-
-    
-    
-    
 {:else}
     { page.error.message }
 {/if}
