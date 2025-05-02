@@ -21,14 +21,10 @@ export async function load() {
       },
     // counter variable
     counter: writable(0),
-    // Questions
-    questionsOne: [
-      "Question 1", 
-      "Question 2"
-    ],
-    // Answers
-    answersOne: [
+    // Selects
+    selectsOne: [
         {
+          question: "How do you feel",
           options: [
             { value: 1, name: 'Go to bed' },
             { value: 2, name: 'Eat a lot' },
@@ -42,6 +38,7 @@ export async function load() {
           selected: 0,
         },
         {
+          question: "How do you feel",
           options: [
             { value: 1, name: 'Go to bed' },
             { value: 2, name: 'Eat a lot' },

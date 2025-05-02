@@ -14,33 +14,10 @@
     // Components
     import ButtonSm from '$lib/components/sloted/ButtonSm.svelte';
     import Toast from '$lib/components/sloted/Toast.svelte';
+    import { applyAction } from '$app/forms';
 
     //Exporting data
     export let data;
-
-    // Selections
-    let selectedOne = 0;
-    let countriesOne = [
-        { value: 1, name: 'Go to bed' },
-        { value: 2, name: 'Eat a lot' },
-        { value: 3, name: 'Run or practice sports' }, 
-        { value: 4, name: 'Go with people' },
-        { value: 5, name: 'Nothing interesting' },
-        { value: 6, name: 'I go to cinema' },
-        { value: 7, name: 'Drive' },
-        { value: 8, name: 'Play a game' },
-    ];
-    let selectedTwo = 0;
-    let countriesTwo = [
-        { value: 1, name: 'Go to bed' },
-        { value: 2, name: 'Eat a lot' },
-        { value: 3, name: 'Run or practice sports' }, 
-        { value: 4, name: 'Go with people' },
-        { value: 5, name: 'Nothing interesting' },
-        { value: 6, name: 'I go to cinema' },
-        { value: 7, name: 'Drive' },
-        { value: 8, name: 'Play a game' },
-    ]; 
 
     // Step state
     let pagename = page.url.pathname.substr(page.url.pathname.lastIndexOf('/')).replace('/', '');
@@ -56,9 +33,9 @@
 
     }
     // Next function
-    function next() {
+    function next(param) {
 
-         let selected = data.answersOne.map(a => ( a ))
+         let selected = param.map(a => ( a ))
 
          let condition = selected.every(a => a.selected != 0)
 
@@ -69,9 +46,7 @@
          }
 
     }
-
     // Other
-
     let toast = () => {
         let toast = document.getElementById("toast")
         toast.classList.remove("hidden")
@@ -85,31 +60,27 @@
     <StepIndicator {currentStep} {steps} color="yellow"  hideLabel size="h-4"/>
 </div>
 {#if data.stepOne }
-
-
-    
-
-
     <div class="flex flex-col gap-medium">
         <h1 class="text-maximal text-center" >Step 1</h1>
         <h2 class="text-medium text-center" >Feelings and social life</h2>
     </div>
-
-
-    {#each data.answersOne.map(a => ( a )) as answer}
-
-    <Label class="text-2">
-        <Select class="mt-2" items={answer.options} bind:value={answer.selected} />
-     </Label>
-
+    {#each data.selectsOne.map(a => ( a )) as i}
+        <Label class="py-minimal text-2 felx flex-col gap-minimal">
+            <p class="font-bold" >{i.question}</p>
+            <Select class="mt-2 text-2 bg-1 font-bold" placeholder={i.question} items={i.options} bind:value={i.selected} />
+        </Label>
     {/each}
-
-    {#if next() }
-        <button on:click={data.goTo("/explore/tests/mbti/2", data.stepTwo)} on:click={Counter([data.answersOne[1].selected])} >
+    {#if next(data.selectsOne) }
+        <button class="mt-minimal" on:click={data.goTo("/explore/tests/mbti/2", data.stepTwo)} on:click={Counter(
+            [
+                data.selectsOne[0].selected,
+                data.selectsOne[1].selected
+            ]
+        )} >
             <ButtonSm>Next step</ButtonSm>
         </button>
     {:else} 
-        <button on:click={toast()} >
+        <button class="mt-minimal" on:click={toast()} >
             <ButtonSm>Next step</ButtonSm>
         </button>
         <div class="hidden" id="toast">
