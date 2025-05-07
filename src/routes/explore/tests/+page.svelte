@@ -1,5 +1,6 @@
 <script>
     import Main from "$lib/components/custom/Main.svelte";
+    
 </script>
 
 

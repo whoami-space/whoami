@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/explore/tests/mbti/2/+page.svelte";
+export { default as component } from "../../../../src/routes/explore/tests/mbti/result/+page.svelte";

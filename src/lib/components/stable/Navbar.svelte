@@ -1,44 +1,42 @@
 <script>
     import { Popover, Dropdown, DropdownItem } from 'flowbite-svelte';
-    import { ChevronDownOutline, ChevronRightOutline, GridPlusSolid, PaperPlaneOutline, CogOutline } from 'flowbite-svelte-icons';
+    import { ChevronDownOutline, ChevronRightOutline, LinkOutline, DotsHorizontalOutline } from 'flowbite-svelte-icons';
     import Cookies from '../sloted/Cookies.svelte';
 
     let links = [
         {
-            label: "Home page",
+            label: "Home",
             href: "/"
+        },
+        {
+            label: "Explore",
+            href: "/explore"
         },
         {
             label: "Posts",
             href: "/posts"
         },
         {
-            label: "MBTI Test",
-            href: "/explore/tests/mbti"
-        },
-        {
             label: "About",
             href: "/about"
         },
     ]
-    
 
   </script>
   
-  <header class="flex w-full pt-medium px-medium justify-around items-center gap-minimal" >
-    <a href="/explore" class="font-bold underline decoration-2 max-w-medium">Explore</a>
+<header class="flex top-0 w-full pt-medium px-medium justify-around items-center gap-minimal" >
     <div id="b1">
-        <button class="w-medium h-medium rounded-full border-[0] flex justify-center items-center"><GridPlusSolid class="text-3 w-10 h-10" /></button>
-      </div> 
-      
-  </header>
+        <button class="w-medium h-medium rounded-full border-[0] flex justify-center items-center"><DotsHorizontalOutline class="text-3 w-medium h-medium drop-shadow-[1px_1px_0_white]" /></button>
+    </div> 
+</header>
 
-<div class="z-[10000]" >
-    <Popover class="max-w-64 text-minimal" triggeredBy="#b1">
-        <ul class="flex flex-col justify-center text-3">
+
+  <div class="z-[10000]" >
+    <Popover  color="primary" class="p-minimal text-minimal drop-shadow-[2px_2px_0_white]" triggeredBy="#b1">
+        <ul class="flex justify-center items-center gap-minimal text-2 ">
             {#each links as link}
             <li>
-                <a  class="flex items-center p-[5px]"  href={link.href}>
+                <a target="_self"  class="flex items-center"  href={link.href}>
                     <b>{link.label}</b>
                     <ChevronRightOutline/>
                 </a>  
@@ -47,4 +45,5 @@
         </ul>
     </Popover>
 </div>
+
 

@@ -2,6 +2,10 @@
     import Main from "$lib/components/custom/Main.svelte";
     import Hero from "$lib/components/stable/Hero.svelte";
     import InlineNavigation from "$lib/components/custom/InlineNavigation.svelte";
+
+    
+    
+    
 </script>
 
 

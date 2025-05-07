@@ -9,18 +9,6 @@
 		"src/routes/explore/tests/mbti/+layout.js",
 		"src/routes/explore/tests/mbti/+layout.js"
 	],
-	"/explore/tests/mbti/1": [
-		"src/routes/explore/tests/mbti/+layout.js"
-	],
-	"/explore/tests/mbti/2": [
-		"src/routes/explore/tests/mbti/+layout.js"
-	],
-	"/explore/tests/mbti/3": [
-		"src/routes/explore/tests/mbti/+layout.js"
-	],
-	"/explore/tests/mbti/4": [
-		"src/routes/explore/tests/mbti/+layout.js"
-	],
 	"/explore/tests/mbti/result": [
 		"src/routes/explore/tests/mbti/+layout.js"
 	]

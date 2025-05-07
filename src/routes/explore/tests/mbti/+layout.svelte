@@ -1,3 +1,5 @@
+
+
 <script >
     import { goto } from "$app/navigation";
     import { page } from "$app/state";
@@ -9,6 +11,8 @@
     /*if (page.error) {
         error(404, redirect(308, "/explore/tests/mbti/"))
     }*/
+
+
 
     let { children } = $props();
 
