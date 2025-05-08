@@ -9,14 +9,14 @@
   <ButtonGroup class="drop-shadow-[2px_2px_0_white]" >
     <Button class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
         <a href={d1link} class="">{ d1 }</a>
-        <ChevronRightOutline/>
+        <ChevronRightOutline class="w-minimal h-minimal" />
     </Button>
     <Button  class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
        <a href={d2link} class="">{ d2 }</a>
-       <ChevronRightOutline/>
+       <ChevronRightOutline class="w-minimal h-minimal" />
     </Button>
     <Button  class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
        <a href={d3link} class="">{ d3 }</a>
-       <ChevronRightOutline/>
+       <ChevronRightOutline class="w-minimal h-minimal" />
     </Button>
   </ButtonGroup>
