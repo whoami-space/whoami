@@ -11,10 +11,9 @@
 
     let resources = [
         {
-            title: "MBTI test",
-            description: "The MBTI personality test is a test that weighs your personality on 4 key characteristics. It is one of the most relevant tests in psychology, second only to the BIG 5. Try it if you want to get a large perspective about yourself.",
-            published: "2025/04/22",
-            link: "/explore/tests/mbti",
+            title: "Personality Tests",
+            description: "Explore all the avaiable tests of the website. It includes MBTI, Eneagram and also BIG 5. These tests are created with a custom algorithm that allows user to define or explore the personality traits of theimselves. Every website, aplication or other tools have an specific algorithm, here it is not diferent. The case here is that the user have access in what happen behind it. When the user gets the result it gets also the most compatible pairs of their characteristics, don't only showing them just the result but also the things that are similar to it.",
+            link: "/explore/tests",
         },
     ]
 
@@ -38,7 +37,6 @@
                     Description
                 </h2>
                 <p class="text-minimal text-1 text-justify" >{resource.description}</p>
-                <p><b>Published at</b> {resource.published}</p>
             </div>
         </Card> 
         {/each}

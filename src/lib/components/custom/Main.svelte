@@ -1,5 +1,5 @@
 <script>
-    const defaultstyle = "p-medium overflow-scroll scroll-smooth "
+    const defaultstyle = "p-maximal mt-medium overflow-scroll scroll-smooth "
     let { custom } = $props();
     
 </script>
