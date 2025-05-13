@@ -6,11 +6,11 @@
 </script>
 
     <div class="flex flex-col justify-center items-center">
-        <img src="https://ucarecdn.com/085dd0eb-3cb5-49e2-8689-489fe54c0f12/iconnobg.png" alt="" class="w-[300px]">
-        <Marquee  speed={0.8} hoverSpeed={0.2} class="flex gap-minimal py-minimal text-2 animate-pulse">
-            <p class="text-minimal text-center" >The space to learn more about <a href="/#abstract" class="font-light underline decoration-1 text-3 p-minimal" ><i>yourself</i></a></p>
+        <img src="https://ucarecdn.com/085dd0eb-3cb5-49e2-8689-489fe54c0f12/iconnobg.png" alt="" class="w-[300px] translate-y-[-15px]">
+        <Marquee speed={0.8} hoverSpeed={0.2} class="flex gap-minimal py-minimal text-2 animate-pulse">
+            <p class="text-minimal text-center" >The space to learn more about <a href="/#self" class="font-light underline decoration-1 text-3 p-minimal" ><i>yourself</i></a></p>
 
-            <p class="text-minimal text-center" >The space to learn more about <a href="/#abstract" class="font-light underline decoration-1 text-3 p-minimal" ><i>yourself</i></a></p>
+            <p class="text-minimal text-center" >The space to learn more about <a href="/#self" class="font-light underline decoration-1 text-3 p-minimal" ><i>yourself</i></a></p>
             
         </Marquee>
 

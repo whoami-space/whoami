@@ -50,14 +50,16 @@
   color: #ff914d ;
 }
 
+
 * {
   outline-offset:0 !important;
   outline-color:#ff914d !important;
   border-color: #ff914d;
   scrollbar-color: #ff914d black;
   scrollbar-width: auto;
-
 }
+
+
 
 
 

@@ -19,7 +19,6 @@
     
 </script>
 
-<Main>
-  {@render children() }
-</Main>
+
+{@render children() }
 
