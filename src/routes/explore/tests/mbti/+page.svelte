@@ -59,12 +59,12 @@
       </li>
     </ol>
     {#if steps.current == 1}
-      <h2>You already started the test, continue answering to check the result</h2>
+      <h2 class="text-center" >You already started the test, continue answering to check the result</h2>
     {/if}
     
     <Button class="text-2 bg-3 p-5 font-bold rounded-xl flex justify-center items-center gap-minimal cursor-pointer drop-shadow-[2px_2px_0_white] select-none" on:click={() => (open = true)}>Continue</Button>
   </div>
-  <Modal bind:open autoclose outsideclose={false}>
+  <Modal class="z-[9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999]" bind:open>
     <h3 class="text-medium text-1">Do you agree with this affirmation?</h3>
     <p class="text-minimal text-1 rounded-xl font-bold">"When i feel bad I often try to make thing that makes me feel better like i'm going out the pain i'm feeling"</p>
     <div class="flex gap-minimal">

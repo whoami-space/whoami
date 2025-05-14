@@ -5,22 +5,20 @@
 	import Loader from '$lib/components/stable/Loader.svelte';
     import { page } from '$app/state';
 	
-	let host = false //= page.url.hostname
-	
 	let { children } = $props();
+
+	let is = page.status === 200
+	let isNot = page.status === 404
 
 </script>
 
 <div class="overflow-x-hidden">
-	{#if host }
-	<Loader/>
-	{/if}
 	<div id="top" ></div>
-
 	<Navbar/>
-
-	{@render children()}
-
+	<div class={is || isNot ? "" : "hidden"}>
+		{@render children()}
+	</div>
 	<Footer/>
 </div>
+
 

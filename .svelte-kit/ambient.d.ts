@@ -41,11 +41,13 @@ declare module '$env/static/private' {
 	export const WEB_HOST: string;
 	export const ENABLE_CAPRA_GENKIT_TOKEN_LOGGING: string;
 	export const HOME: string;
+	export const COLLAB_WS_URL: string;
 	export const NIX_SSL_CERT_FILE: string;
 	export const PROMPT_COMMAND: string;
 	export const MONOSPACE_ON_START_COMMANDS: string;
 	export const WORKSPACE_SLUG: string;
 	export const MONOSPACE_ENV_CFG_HASH: string;
+	export const COLLAB_YJS_ROOM: string;
 	export const NPM_CONFIG_PREFIX: string;
 	export const IDX_CHANNEL: string;
 	export const IDX_ENV_CONFIG_FILE_PATH: string;
@@ -126,11 +128,13 @@ declare module '$env/dynamic/private' {
 		WEB_HOST: string;
 		ENABLE_CAPRA_GENKIT_TOKEN_LOGGING: string;
 		HOME: string;
+		COLLAB_WS_URL: string;
 		NIX_SSL_CERT_FILE: string;
 		PROMPT_COMMAND: string;
 		MONOSPACE_ON_START_COMMANDS: string;
 		WORKSPACE_SLUG: string;
 		MONOSPACE_ENV_CFG_HASH: string;
+		COLLAB_YJS_ROOM: string;
 		NPM_CONFIG_PREFIX: string;
 		IDX_CHANNEL: string;
 		IDX_ENV_CONFIG_FILE_PATH: string;
