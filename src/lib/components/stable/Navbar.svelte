@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
-    import { Popover, Dropdown, DropdownItem, Spinner } from 'flowbite-svelte';
-    import { CaretDownSolid, HomeSolid, LinkOutline } from 'flowbite-svelte-icons';
+    import { Popover, Spinner } from 'flowbite-svelte';
+    import { CaretDownSolid, HomeOutline, HomeSolid, LinkOutline } from 'flowbite-svelte-icons';
 
     let links = [
         {
@@ -13,10 +13,6 @@
             href: "/posts"
         },
         {
-            label: "Tests",
-            href: "/explore/tests"
-        },
-        {
             label: "About",
             href: "/about"
         },
@@ -24,56 +20,60 @@
 
   </script>
   
-<header class="flex top-0 w-full pt-maximal px-maximal justify-between items-center gap-minimal" >
-    <div id="popover">
-        <button class="w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[1px_1px_0_white]">
-            <LinkOutline class="text-2 w-10 h-10" />
-        </button>
+<header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal pb-medium" >
+    <div>
+        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[1px_1px_0_white]">
+            <HomeOutline class="text-2 w-5 h-5" />
+        </a>
     </div>
-    <div class="drop-shadow-[0_50px_100px_black]" >
-        <Popover arrow={false} trigger="hover" placement="right" color="primary" class="text-minimal drop-shadow-[2px_2px_0_white]" triggeredBy="#popover">
-            <ul class="flex justify-start items-center gap-minimal text-2">
-                {#each links as link}
-                    <li>
-                        <a class="flex justify-center items-center"  href={link.href}>
-                            <b class="text-minimal underline decoration-2" >{link.label}</b>
-                        </a>  
-                    </li>
-                {/each}       
-            </ul>
-        </Popover>
-    </div>
-    <div class="translate-y-[10px]" >
+    <div class="translate-y-[4rem]" >
         <div id="loader">
-            <Spinner size="10" />
+            <Spinner size="8" />
         </div>
-    </div> 
+    </div>
+    <div id="popover">
+        <button class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[1px_1px_0_white]">
+            <LinkOutline class="text-2 w-6 h-6" />
+        </button>
+        <div class="sm:hidden top-0 drop-shadow-[0_50px_100px_black]" >
+            <Popover arrow={false} trigger="hover" placement="left" color="primary" class="text-minimal drop-shadow-[2px_2px_0_white]" triggeredBy="#popover">
+                <ul class="flex justify-start items-center gap-minimal text-2">
+                    {#each links as link}
+                        <li>
+                            <a class="flex justify-center items-center"  href={link.href}>
+                                <b class="text-minimal underline decoration-2" >{link.label}</b>
+                            </a>  
+                        </li>
+                    {/each}       
+                </ul>
+            </Popover>
+        </div>
+    </div>
 </header>
 
 
 {#if page.status === 200}
-<style>
+    <style>
 
-    #loader {
-        animation: fadeout 2s ease-out forwards;
-        animation-iteration-count: 1;
-    }
-        
-    @keyframes fadeout {
-        0% {
-                opacity: 1;
+        #loader {
+            animation: fadeout 2s ease-out forwards;
+            animation-iteration-count: 1;
         }
-        90% {
-                opacity: 1;
+            
+        @keyframes fadeout {
+            0% {
+                    opacity: 1;
+            }
+            90% {
+                    opacity: 1;
+            }
+            100% {
+                    opacity: 0;
+                    visibility: hidden;
+            }
         }
-        100% {
-                opacity: 0;
-                visibility: hidden;
-        }
-    }
-        
+            
     </style>
-
 {/if}
 
 

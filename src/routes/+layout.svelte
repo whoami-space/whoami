@@ -7,18 +7,19 @@
 	
 	let { children } = $props();
 
-	let is = page.status === 200
-	let isNot = page.status === 404
-
 </script>
 
-<div class="overflow-x-hidden">
-	<Navbar/>
+
+<div>
 	<div id="top" ></div>
-	<div class={is || isNot ? "" : "hidden"}>
+	<Navbar/>
+	<div>
 		{@render children()}
 	</div>
 	<Footer/>
 </div>
+
+
+
 
 

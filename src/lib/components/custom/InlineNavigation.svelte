@@ -6,17 +6,14 @@
     
   </script>
   
-  <ButtonGroup class="drop-shadow-[2px_2px_0_white]" >
+  <ButtonGroup class="drop-shadow-[2px_2px_0_white] underline decoration-2" >
     <Button class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
-        <a href={d1link} class="">{ d1 }</a>
-        <ChevronRightOutline class="w-minimal h-minimal" />
+        <a href={d1link}>{ d1 }</a>
     </Button>
     <Button  class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
-       <a href={d2link} class="">{ d2 }</a>
-       <ChevronRightOutline class="w-minimal h-minimal" />
+       <a href={d2link}>{ d2 }</a>
     </Button>
     <Button  class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
-       <a href={d3link} class="">{ d3 }</a>
-       <ChevronRightOutline class="w-minimal h-minimal" />
+       <a href={d3link}>{ d3 }</a>
     </Button>
   </ButtonGroup>
