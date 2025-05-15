@@ -35,7 +35,7 @@
         <button class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[1px_1px_0_white]">
             <LinkOutline class="text-2 w-6 h-6" />
         </button>
-        <div class="sm:hidden top-0 drop-shadow-[0_50px_100px_black]" >
+        <div class="top-0 drop-shadow-[0_50px_100px_black]" >
             <Popover arrow={false} trigger="hover" placement="left" color="primary" class="text-minimal drop-shadow-[2px_2px_0_white]" triggeredBy="#popover">
                 <ul class="flex justify-start items-center gap-minimal text-2">
                     {#each links as link}
