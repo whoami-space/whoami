@@ -13,8 +13,8 @@
 </script>
 
 <div class="overflow-x-hidden">
-	<div id="top" ></div>
 	<Navbar/>
+	<div id="top" ></div>
 	<div class={is || isNot ? "" : "hidden"}>
 		{@render children()}
 	</div>
