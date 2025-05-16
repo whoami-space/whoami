@@ -46,6 +46,8 @@
   font-weight: bold;
 }
 
+
+
 ::selection {
   color: #ff914d ;
 }
@@ -57,6 +59,7 @@
   border-color: #ff914d;
   scrollbar-color: #ff914d black;
   scrollbar-width: auto;
+  interpolate-size: allow-keywords;
 }
 
 
