@@ -28,7 +28,9 @@
 
   </script>
   
-  <Drawer placement="bottom" class="bg-3 text-2 w-[100vw] rounded-t-xl drop-shadow-[0_-2px_0_white]" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+  <Drawer transitionType="slide"
+  params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center bg-3 text-2 w-[100vw] select-none py-medium rounded-t-xl drop-shadow-[0_-2px_0_white]" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+    <b >Navigate between pages</b>
     <ul class="flex justify-center items-center gap-minimal text-2">
         {#each links as link}
             <li>

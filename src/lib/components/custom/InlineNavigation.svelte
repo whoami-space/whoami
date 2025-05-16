@@ -6,7 +6,7 @@
     
   </script>
   
-  <ButtonGroup class="drop-shadow-[2px_2px_0_white] underline decoration-2" >
+  <ButtonGroup class="select-none drop-shadow-[2px_2px_0_white] underline decoration-2" >
     <Button class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
         <a href={d1link}>{ d1 }</a>
     </Button>
