@@ -1,9 +1,16 @@
 <script>
+    import { page } from "$app/state";
+    import InlineNavigation from "$lib/components/custom/InlineNavigation.svelte";
     import Main from "$lib/components/custom/Main.svelte";
 </script>
 
 <Main custom="flex flex-col justify-center items-center gap-minimal" >
-        <h1 class="text-maximal text-3">404</h1>
-        <h2 class="text-medium text-center">It looks like it's not an existing page</h2>
-        <p>Try to navigate or go to <a href="/" class="text-3 underline">home page.</a></p>
+        <h1 class="text-maximal text-2 text-center">{page.status}<br>:/</h1>
+        <h2 class="text-medium text-center">The content cannot be loaded or the page does not exist</h2>
+        <p>Try to navigate by following next links</p>
+        <br>
+        <a href="/" class="select-none p-minimal bg-3 rounded-xl drop-shadow-[2px_2px_0_white] font-bold underline decoration-2">Go to home page</a>
+        or
+        <a href="/contact" class="select-none  p-minimal bg-3 rounded-xl drop-shadow-[2px_2px_0_white] font-bold underline decoration-2">Get help or support</a>
+        
 </Main>
