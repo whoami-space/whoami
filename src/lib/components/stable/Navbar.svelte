@@ -21,6 +21,10 @@
             href: "/explore/tests"
         },
         {
+            label: "Faq",
+            href: "/faq"
+        },
+        {
             label: "About",
             href: "/about"
         },

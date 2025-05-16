@@ -12,5 +12,6 @@
 	"/explore/tests/mbti/result": [
 		"src/routes/explore/tests/mbti/+layout.js"
 	],
-	"/faq": []
+	"/faq": [],
+	"/privacy-policy": []
 }
