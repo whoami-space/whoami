@@ -12,5 +12,7 @@
         <a href="/" class="select-none p-minimal bg-3 rounded-xl drop-shadow-[2px_2px_0_white] font-bold underline decoration-2">Go to home page</a>
         or
         <a href="/contact" class="select-none  p-minimal bg-3 rounded-xl drop-shadow-[2px_2px_0_white] font-bold underline decoration-2">Get help or support</a>
-        
+        <script>
+            import { Progressradial } from "flowbite-svelte";
+          </script>
 </Main>

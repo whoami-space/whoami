@@ -1,6 +1,23 @@
 <script>
-    export let data;
-    let counter = data. counter
+    import ProgressBar from "$lib/components/custom/Progress.svelte";
+    import Main from "$lib/components/custom/Main.svelte";
+    let siProgress = "50"
+    let seProgress = "25"
 </script>
 
-THe sum was {$counter}
+
+
+<Main>
+    <div class="grid grid-cols-2 flex flex-wrap wrap gap-minimal p-minimal rounded-xl bg-2">
+        <div class="flex flex-col justify-center items-center gap-minimal p-minimal rounded-xl bg-1">
+            <h2>SE <br> Extraverted Sensing</h2>
+            <ProgressBar progress={seProgress} />
+            <h3>Your probability to be a SI user is over: <b class="text-3" >{seProgress}%</b></h3>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-minimal p-minimal rounded-xl bg-1">
+            <h2>SI <br> Introverted Sensing</h2>
+            <ProgressBar progress={siProgress} />
+            <h3>Your probability to be a SE user is over: <b class="text-3" >{siProgress}%</b></h3>
+        </div>
+    </div>
+</Main>

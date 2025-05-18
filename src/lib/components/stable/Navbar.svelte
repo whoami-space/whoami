@@ -5,7 +5,7 @@
     import { Drawer, Button, CloseButton } from "flowbite-svelte";
     import { InfoCircleSolid, ArrowRightOutline } from "flowbite-svelte-icons";
 
-  let hiddenBackdropTrue = $state(true);
+    let hiddenBackdropTrue = $state(true);
 
     let links = [
         {
@@ -46,7 +46,7 @@
     </ul>
   </Drawer>
 
-<header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal pb-medium" >
+<header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal" >
     <div>
         <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[2px_2px_0_white] border">
             <HomeOutline class="text-2 w-5 h-5" />
