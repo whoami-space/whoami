@@ -52,10 +52,17 @@
             <HomeOutline class="text-2 w-5 h-5" />
         </a>
     </div>
-    <div class="translate-y-[4rem]" >
-        <div id="loader">
-            <Spinner size="8" />
+    <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
+        <div class="relative">
+            <a href="/">
+                <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="shadow-xl w-medium h-medium p-[5px] rounded-full">
+            </a>
+            <div id="loader">
+                <Spinner class="absolute top-[4px] left-[4px]" size="10" />
+            </div>
         </div>
+        <p class="font-bold" >whoami.space</p>
+        
     </div>
     <div>
         <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[2px_2px_0_white]">
@@ -69,7 +76,7 @@
     <style>
 
         #loader {
-            animation: fadeout 2s ease-out forwards;
+            animation: fadeout 4s ease-out forwards;
             animation-iteration-count: 1;
         }
             
