@@ -13,5 +13,8 @@
 		"src/routes/explore/tests/mbti/+layout.js"
 	],
 	"/faq": [],
-	"/privacy-policy": []
+	"/privacy-policy": [],
+	"/sitemap.xml": [
+		"src/routes/sitemap.xml/+server.ts"
+	]
 }

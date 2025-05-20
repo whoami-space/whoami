@@ -9,7 +9,7 @@
 
     let links = [
         {
-            label: "Explore",
+            label: "Explore Resources",
             href: "/explore"
         },
         {
@@ -19,10 +19,6 @@
         {
             label: "Tests",
             href: "/explore/tests"
-        },
-        {
-            label: "Faq",
-            href: "/faq"
         },
         {
             label: "About",

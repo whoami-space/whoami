@@ -1,1 +1,4 @@
-This is robots txt file
+User-agent: *
+Allow: /
+
+Sitemap: https://whoami.space/sitemap.xml
