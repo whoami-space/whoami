@@ -1,7 +1,6 @@
 
 
 <script>
-    import { updated } from "$app/state";
     import Card from "$lib/components/custom/Card.svelte";
     import Main from "$lib/components/custom/Main.svelte";
     import { Tabs, TabItem } from "flowbite-svelte";
