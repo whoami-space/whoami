@@ -2,6 +2,7 @@
 
 <script>
     import Card from "$lib/components/custom/Card.svelte";
+    import Lay from "$lib/components/custom/Lay.svelte";
     import Main from "$lib/components/custom/Main.svelte";
     import { Tabs, TabItem } from "flowbite-svelte";
     import { ArrowUpOutline } from "flowbite-svelte-icons";
@@ -29,7 +30,7 @@
         </div>
         <p>Publish Date</p>
     </div>
-    <div class="grid md:grid-cols-2 justify-center items-center gap-medium">
+    <Lay columns="2">
         {#each tests as test}
         <Card label={test.title} link={test.link} >
             <div class="flex flex-col items-center gap-medium p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
@@ -40,7 +41,7 @@
             </div>
         </Card> 
         {/each}
-   </div>
+    </Lay>
 </Main>
 
 

@@ -2,6 +2,7 @@
 
 <script>
     import Card from "$lib/components/custom/Card.svelte";
+    import Lay from "$lib/components/custom/Lay.svelte";
     import Main from "$lib/components/custom/Main.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
     import { Tabs, TabItem } from "flowbite-svelte";
@@ -30,7 +31,7 @@
         </div>
         <p>Publish Date</p>
     </div>
-    <div class="flex flex-col justify-center items-center gap-medium">
+    <div>
         {#each posts as post}
         <Card label={post.title} link={post.link} >
             <div class="grid md:grid-cols-2 items-start justify-center gap-medium p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
@@ -47,7 +48,7 @@
             </div>
         </Card> 
         {/each}
-   </div>
+    </div>
 </Main>
 
 

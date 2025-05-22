@@ -3,33 +3,26 @@
     import Blockquote from "../custom/Blockquote.svelte";
     import { CheckCircleSolid, ChevronDoubleDownOutline, EyeSolid } from "flowbite-svelte-icons";
     import Pic from "../custom/Pic.svelte";
-
 </script>
 
     <div class="flex flex-col justify-center items-center">
         <Marquee speed={0.8} hoverSpeed={0.2} class="flex py-minimal  text-2 rounded-xl  font-bold animate-pulse mb-medium">
             <p class="px-medium text-medium text-center " >The space   to learn more about <a href="/#self" class="font-light underline decoration-1 text-3 p-minimal" ><i>yourself</i></a></p>
         </Marquee>
-        <Pic src="https://ucarecdn.com/97402b37-459c-4099-b049-94a14f75be3d/hero.gif" alt="Animation for whoami icon" />
-        <ul class="p-medium flex flex-wrap justify-center items-center">
+        <Blockquote description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither" author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/>
+        <!-- <div class="mt-medium relative flex flex-col justify-center items-center">
+            <div class="absolute top-[150px] min-w-[10rem] min-h-[10rem] bg-3 rounded-full text-center text-medium z-2  text-shadow-[1px_1px_0_black] flex justify-start items-center flex-col "><b>Who am i?</b></div>
+            <div class="polka-dots z-1"></div>
+        </div> -->
+        <ul class="p-medium mb-minimal  flex flex-wrap justify-center items-center">
             <li class="flex justify-center items-center gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" /> Explore self knowledge</li>
             <li class="flex justify-center items-center  gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" /> Learn psychological theories</li>
             <li class="flex justify-center items-center  gap-minimal text-center m-medium"><CheckCircleSolid class="w-medium h-medium" />All in totaly free way</li>
         </ul>
         <ChevronDoubleDownOutline class="m-minimal w-medium h-medium" />
         <ChevronDoubleDownOutline class="m-minimal w-medium h-medium opacity-[.6]" />
-        <ChevronDoubleDownOutline class="m-minimal mb-medium w-medium h-medium opacity-[.3]" />
-    </div>
-
-    
-
-    <div class="mt-medium relative flex flex-col justify-center items-center">
-        <div class="absolute top-[200px] min-w-[10rem] min-h-[10rem] bg-3 rounded-full text-center text-medium z-2  text-shadow-[1px_1px_0_black] flex justify-start items-center flex-col "><b>Who am i?</b><EyeSolid class="w-maximal h-maximal" /></div>
-        <div class="polka-dots z-1"></div>
-    </div>
-
-    <div>
-        <Blockquote description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither" author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/>
+        <ChevronDoubleDownOutline class="m-minimal mb-minimal w-medium h-medium opacity-[.3]" />
+        
     </div>
 
 
