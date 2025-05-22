@@ -1,0 +1,8 @@
+<script>
+    import { ChevronRightOutline } from 'flowbite-svelte-icons';
+    let {onClick} = $props()
+</script>
+
+
+
+<button on:click={onClick} class="p-minimal text-3 font-bold rounded-xl flex justify-center items-center gap-minimal cursor-pointer text-medium w-full  select-none border-[2px] border-dotted"><p><slot/></p> <ChevronRightOutline class="w-medium h-medium" /></button>

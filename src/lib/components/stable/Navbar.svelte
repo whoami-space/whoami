@@ -1,9 +1,9 @@
 <script>
     import { page } from '$app/state';
-    import { Popover, Spinner } from 'flowbite-svelte';
-    import { CaretDownSolid, HomeOutline, HomeSolid, LinkOutline } from 'flowbite-svelte-icons';
-    import { Drawer, Button, CloseButton } from "flowbite-svelte";
-    import { InfoCircleSolid, ArrowRightOutline } from "flowbite-svelte-icons";
+    import { Spinner } from 'flowbite-svelte';
+    import { HomeOutline, LinkOutline } from 'flowbite-svelte-icons';
+    import { Drawer } from "flowbite-svelte";
+    import Anchor from '../custom/Anchor.svelte';
 
     let hiddenBackdropTrue = $state(true);
 
@@ -13,12 +13,12 @@
             href: "/explore"
         },
         {
-            label: "Know more",
+            label: "About",
             href: "/about"
         },
         {
-            label: "Big picture",
-            href: "/about"
+            label: "Overview",
+            href: "/overview"
         },
     ]
 
@@ -27,12 +27,12 @@
   <Drawer transitionType="slide"
   params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center w-[100vw] select-none py-medium rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
     <b >Navigate between pages</b>
-    <ul class="flex justify-center items-center gap-minimal">
+    <ul class="flex justify-center items-center gap-minimal mt-minimal">
         {#each links as link}
             <li>
-                <a onclick={() => (hiddenBackdropTrue = true)} class="flex justify-center items-center rounded-xl p-minimal border-[2px] border-dotted"  href={link.href}>
+                <Anchor onClick={() => (hiddenBackdropTrue = true)} class="flex justify-center items-center" href={link.href}>
                     <b class="text-minimal border-b-[2px] border-dotted" >{link.label}</b>
-                </a>  
+                </Anchor>  
             </li>
         {/each}       
     </ul>
@@ -40,24 +40,24 @@
 
 <header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
     <div>
-        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-full border">
+        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl border">
             <HomeOutline class="w-5 h-5" />
         </a>
     </div>
     <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
         <div class="relative">
             <a href="/">
-                <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="p-[5px] shadow-xl w-medium h-medium rounded-full">
+                <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="p-[2px] w-medium h-medium rounded-full border-[2px] border-dotted">
             </a>
             <div id="loader">
-                <Spinner color="primary" class="absolute top-[4px] left-[4px]" size="10" />
+                <Spinner color="primary" class="absolute top-[5px] left-[4px]" size="10" />
             </div>
         </div>
         <p class="font-bold text-2" >whoami.space</p>
         
     </div>
     <div>
-        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-full drop-shadow-[2px_2px_0_white]">
+        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl drop-shadow-[2px_2px_0_white]">
             <LinkOutline class="w-6 h-6" />
         </button>
     </div>

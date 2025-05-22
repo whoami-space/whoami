@@ -41,10 +41,10 @@
         {#each resources as resource}
             <Card label={resource.title} link={resource.link} >
                 <div class="flex flex-col items-center gap-medium p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
-                    <h2 class="text-1 text-medium" >
+                    <h2 class="text-medium" >
                         Description
                     </h2>
-                    <p class="text-minimal text-1 text-justify" >{resource.description}</p>
+                    <p class="text-minimal text-justify" >{resource.description}</p>
                 </div>
             </Card> 
         {/each}

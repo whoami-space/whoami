@@ -9,7 +9,7 @@
     let { data } = $props()
 
     import { Button, List, Modal, P } from "flowbite-svelte";
-    import ButtonSm from "$lib/components/sloted/ButtonSm.svelte";
+    import ButtonSm from "$lib/components/custom/ButtonSm.svelte";
     import { CheckCircleSolid, BackwardStepSolid, ChevronDoubleRightOutline } from "flowbite-svelte-icons";
     import { Indicator } from "flowbite-svelte";
     import Main from "$lib/components/custom/Main.svelte";
