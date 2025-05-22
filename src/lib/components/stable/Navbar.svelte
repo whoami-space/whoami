@@ -29,9 +29,9 @@
   </script>
   
   <Drawer transitionType="slide"
-  params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center bg-3 text-2 w-[100vw] select-none py-medium rounded-t-xl drop-shadow-[0_-2px_0_white]" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+  params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center bg-3 w-[100vw] select-none py-medium rounded-t-xl drop-shadow-[0_-2px_0_white] text-1" backdrop={true} bind:hidden={hiddenBackdropTrue}>
     <b >Navigate between pages</b>
-    <ul class="flex justify-center items-center gap-minimal text-2">
+    <ul class="flex justify-center items-center gap-minimal">
         {#each links as link}
             <li>
                 <a onclick={() => (hiddenBackdropTrue = true)} class="flex justify-center items-center"  href={link.href}>
@@ -42,27 +42,27 @@
     </ul>
   </Drawer>
 
-<header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal" >
+<header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
     <div>
-        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[2px_2px_0_white] border">
-            <HomeOutline class="text-2 w-5 h-5" />
+        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dashed rounded-xl border">
+            <HomeOutline class="w-5 h-5" />
         </a>
     </div>
     <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
         <div class="relative">
             <a href="/">
-                <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="shadow-xl w-medium h-medium p-[5px] rounded-full">
+                <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="p-[5px] shadow-xl w-medium h-medium rounded-full">
             </a>
             <div id="loader">
-                <Spinner class="absolute top-[4px] left-[4px]" size="10" />
+                <Spinner color="primary" class="absolute top-[4px] left-[4px]" size="10" />
             </div>
         </div>
-        <p class="font-bold" >whoami.space</p>
+        <p class="font-bold text-2" >whoami.space</p>
         
     </div>
     <div>
-        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center bg-3 rounded-xl drop-shadow-[2px_2px_0_white]">
-            <LinkOutline class="text-2 w-6 h-6" />
+        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dashed rounded-xl drop-shadow-[2px_2px_0_white]">
+            <LinkOutline class="w-6 h-6" />
         </button>
     </div>
 </header>

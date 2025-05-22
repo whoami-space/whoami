@@ -8,22 +8,22 @@
 
 @theme {
    /*Base theme*/
-  --color-1: black;
-  --color-2: white;
-  --color-3: #ff914d;
+  --color-1: #F7F5FB;
+  --color-2: gray;
+  --color-3: #593C8F;
 
   /*Flowbite customization*/
-  --color-primary-50: oklch(76.27% 0.16 50.2deg);
-	--color-primary-100: oklch(76.27% 0.16 50.2deg);
-	--color-primary-200: oklch(76.27% 0.16 50.2deg);
-	--color-primary-300: oklch(76.27% 0.16 50.2deg);
-	--color-primary-400: oklch(76.27% 0.16 50.2deg);
-	--color-primary-500: oklch(76.27% 0.16 50.2deg);
-	--color-primary-600: oklch(76.27% 0.16 50.2deg);
-	--color-primary-700: oklch(76.27% 0.16 50.2deg);
-	--color-primary-800: oklch(76.27% 0.16 50.2deg);
-	--color-primary-900: oklch(76.27% 0.16 50.2deg);
-	--color-primary-950: oklch(76.27% 0.16 50.2deg);
+  --color-primary-50: var(--color-3);
+	--color-primary-100: var(--color-3);
+	--color-primary-200: var(--color-3);
+	--color-primary-300: var(--color-3);
+	--color-primary-400: var(--color-3);
+	--color-primary-500: var(--color-3);
+	--color-primary-600: var(--color-3);
+	--color-primary-700: var(--color-3);
+	--color-primary-800: var(--color-3);
+	--color-primary-900: var(--color-3);
+	--color-primary-950: var(--color-3);
 
   /*Font Size*/
   --text-minimal: 1rem;
@@ -62,15 +62,16 @@
 
 
 ::selection {
-  color: #ff914d ;
+  color: var(--color-3) ;
+  background: var(--color-2);
 }
 
 
 * {
   outline-offset:0 !important;
-  outline-color:#ff914d !important;
-  border-color: #ff914d;
-  scrollbar-color: #ff914d black;
+  outline-color:var(--color-3) !important;
+  border-color: var(--color-3);
+  scrollbar-color: var(--color-3) black;
   scrollbar-width: auto;
   interpolate-size: allow-keywords;
 }

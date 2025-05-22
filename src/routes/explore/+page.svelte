@@ -27,13 +27,15 @@
     
 </script>
 
-<Main custom="flex flex-col gap-medium" >
-    <h1 class="text-maximal text-center" >Explore resources</h1> 
-    <div class="flex justify-center -tems-center opacity-[.5]">
-        <div>
-            <ArrowUpOutline/>
+<Main custom>
+    <div class="flex flex-col justify-center items-center gap-minimal">
+        <h1 class="text-maximal text-center" >Explore resources</h1> 
+        <div class="flex justify-center -tems-center opacity-[.5]">
+            <div>
+                <ArrowUpOutline/>
+            </div>
+            <p>Relevance</p>
         </div>
-        <p>Relevance</p>
     </div>
     <Lay columns="2">
         {#each resources as resource}
