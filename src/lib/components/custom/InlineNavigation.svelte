@@ -6,14 +6,14 @@
     
   </script>
   
-  <ButtonGroup class="select-none drop-shadow-[2px_2px_0_white] underline decoration-2" >
-    <Button class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
+<div class="select-none rounded-xl flex justify-center itesm-center gap-minimal text-3 border border-[2px] border-dotted  p-minimal font-bold" >
+   <div class="border-b-[2px] border-dotted" >
         <a href={d1link}>{ d1 }</a>
-    </Button>
-    <Button  class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
+   </div>
+   <div class="border-b-[2px] border-dotted" >
        <a href={d2link}>{ d2 }</a>
-    </Button>
-    <Button  class="bg-3 text-2 font-bold hover:bg-3 hover:text-2" >
+   </div>
+   <div class="border-b-[2px] border-dotted" >
        <a href={d3link}>{ d3 }</a>
-    </Button>
-  </ButtonGroup>
+   </div>
+</div>

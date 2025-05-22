@@ -13,15 +13,11 @@
             href: "/explore"
         },
         {
-            label: "Posts",
-            href: "/explore/posts"
+            label: "Know more",
+            href: "/about"
         },
         {
-            label: "Tests",
-            href: "/explore/tests"
-        },
-        {
-            label: "About",
+            label: "Big picture",
             href: "/about"
         },
     ]
@@ -29,13 +25,13 @@
   </script>
   
   <Drawer transitionType="slide"
-  params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center bg-3 w-[100vw] select-none py-medium rounded-t-xl drop-shadow-[0_-2px_0_white] text-1" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+  params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center w-[100vw] select-none py-medium rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
     <b >Navigate between pages</b>
     <ul class="flex justify-center items-center gap-minimal">
         {#each links as link}
             <li>
-                <a onclick={() => (hiddenBackdropTrue = true)} class="flex justify-center items-center"  href={link.href}>
-                    <b class="text-minimal underline decoration-2" >{link.label}</b>
+                <a onclick={() => (hiddenBackdropTrue = true)} class="flex justify-center items-center rounded-xl p-minimal border-[2px] border-dotted"  href={link.href}>
+                    <b class="text-minimal border-b-[2px] border-dotted" >{link.label}</b>
                 </a>  
             </li>
         {/each}       
@@ -44,7 +40,7 @@
 
 <header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
     <div>
-        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dashed rounded-xl border">
+        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-full border">
             <HomeOutline class="w-5 h-5" />
         </a>
     </div>
@@ -61,7 +57,7 @@
         
     </div>
     <div>
-        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dashed rounded-xl drop-shadow-[2px_2px_0_white]">
+        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-full drop-shadow-[2px_2px_0_white]">
             <LinkOutline class="w-6 h-6" />
         </button>
     </div>
