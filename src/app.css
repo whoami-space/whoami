@@ -8,9 +8,9 @@
 
 @theme {
    /*Base theme*/
-  --color-1: #F7F5FB;
-  --color-2: gray;
-  --color-3: #593C8F;
+  --color-1: #E9ECF5;
+  --color-2: #393D3F;
+  --color-3: #6200B3;
 
   /*Flowbite customization*/
   --color-primary-50: var(--color-3);

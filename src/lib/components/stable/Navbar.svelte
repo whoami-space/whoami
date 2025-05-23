@@ -23,9 +23,11 @@
     ]
 
   </script>
+
+  
   
   <Drawer transitionType="slide"
-  params={{duration:200}} placement="bottom" class="flex flex-col gap-minimal justify-center items-center w-[100vw] select-none py-medium rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+  params={{duration:200}} placement="bottom" class="bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none py-medium rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
     <b >Navigate between pages</b>
     <ul class="flex justify-center items-center gap-minimal mt-minimal">
         {#each links as link}
@@ -45,19 +47,12 @@
         </a>
     </div>
     <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
-        <div class="relative">
-            <a href="/">
-                <img src="https://ucarecdn.com/77da2dbc-5bd4-4c5a-a90a-429185578623/subicon.jpg" alt="" class="p-[2px] w-medium h-medium rounded-full border-[2px] border-dotted">
-            </a>
             <div id="loader">
-                <Spinner color="primary" class="absolute top-[5px] left-[4px]" size="10" />
+                <Spinner color="primary" size="6" />
             </div>
-        </div>
-        <p class="font-bold text-2" >whoami.space</p>
-        
     </div>
     <div>
-        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl drop-shadow-[2px_2px_0_white]">
+        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl ">
             <LinkOutline class="w-6 h-6" />
         </button>
     </div>
