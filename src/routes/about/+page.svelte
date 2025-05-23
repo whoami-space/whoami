@@ -2,6 +2,7 @@
     import Main from "$lib/components/custom/Main.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
     import Lay from "$lib/components/custom/Lay.svelte";
+    import Anchor from "$lib/components/custom/Anchor.svelte";
 </script>
 
 
@@ -10,7 +11,7 @@
     <h1>About the project</h1>
     <Pic alt="Representation of about page" src='https://ucarecdn.com/2a81533f-bd01-4f14-846f-b6009fafb407/about.png' />
     <h2>Objective</h2>
-            <p>In short, the objective of this website is to allow greater immersion in self-knowledge to users in the most accessible way possible. And how is this done?   Through tools such as personality tests, through articles covering complex concepts or even through more direct contact if necessary. If you are a psychologist or have knowledge in psychology, you can also collaborate with ideas by <a href="/contact" class="text-3 underline">contacting</a>
+            <p>In short, the objective of this website is to allow greater immersion in self-knowledge to users in the most accessible way possible. And how is this done?   Through tools such as personality tests, through articles covering complex concepts or even through more direct contact if necessary. If you are a psychologist or have knowledge in psychology, you can also collaborate with ideas by <Anchor href="/contact">contacting</Anchor>
             </p>
     <Lay columns="2">
         <svelte:fragment slot="1">

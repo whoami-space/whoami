@@ -4,6 +4,8 @@
     import { HomeOutline, LinkOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
+    import ButtonSm from '../custom/ButtonSm.svelte';
+    import Info from '../custom/Info.svelte';
 
     let hiddenBackdropTrue = $state(true);
 
@@ -13,12 +15,16 @@
             href: "/explore"
         },
         {
-            label: "About",
-            href: "/about"
+            label: "Posts",
+            href: "/explore/posts"
         },
         {
-            label: "Overview",
-            href: "/overview"
+            label: "Tests",
+            href: "/explore/tests"
+        },
+        {
+            label: "About",
+            href: "/about"
         },
     ]
 
@@ -28,15 +34,20 @@
   
   <Drawer transitionType="slide"
   params={{duration:200}} placement="bottom" class="bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none py-medium rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
-    <b >Navigate between pages</b>
-    <ul class="flex justify-center items-center gap-minimal mt-minimal">
-        {#each links as link}
-            <li>
-                <Anchor onClick={() => (hiddenBackdropTrue = true)} class="flex justify-center items-center" href={link.href}>
-                    <b class="text-minimal border-b-[2px] border-dotted" >{link.label}</b>
-                </Anchor>  
-            </li>
-        {/each}       
+    <div class="flex gap-minimal justify-center items-center">
+        <h3 class="text-medium" >Overview</h3>
+        <Info placement="bottom" tooltip="Access main pages of website" />
+    </div>
+    <ul class="flex flex-wrap border p-medium rounded-xl justify-center items-center gap-minimal mt-minimal">
+                {#each links as link}
+                <li>
+                    <a href={link.href}>
+                        <ButtonSm onClick={() => (hiddenBackdropTrue = true)}>
+                            <b>{link.label}</b>
+                        </ButtonSm>  
+                    </a>
+                </li>
+                {/each}       
     </ul>
   </Drawer>
 
@@ -47,9 +58,11 @@
         </a>
     </div>
     <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
+        <div>
             <div id="loader">
                 <Spinner color="primary" size="6" />
             </div>
+        </div>
     </div>
     <div>
         <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl ">

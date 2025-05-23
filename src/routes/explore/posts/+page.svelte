@@ -23,7 +23,7 @@
     
 </script>
 
-<Main >
+<Main>
     <div class="flex flex-col justify-center items-center gap-minimal">
         <h1 class="text-maximal text-center" >Posts</h1> 
         <div class="flex justify-center -tems-center opacity-[.5]">
