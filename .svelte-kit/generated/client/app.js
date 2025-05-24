@@ -25,14 +25,14 @@ export const dictionary = {
 		"/about": [4],
 		"/component-testing": [5],
 		"/contact": [6],
-		"/explore": [7],
-		"/explore/posts": [8],
-		"/explore/posts/mbti": [9],
-		"/explore/tests": [10],
-		"/explore/tests/mbti": [11,[2]],
-		"/explore/tests/mbti/result": [12,[2]],
-		"/faq": [13],
-		"/privacy-policy": [14]
+		"/faq": [7],
+		"/overview": [8],
+		"/posts": [9],
+		"/posts/mbti": [10],
+		"/privacy-policy": [11],
+		"/tests": [12],
+		"/tests/mbti": [13,[2]],
+		"/tests/mbti/result": [14,[2]]
 	};
 
 export const hooks = {

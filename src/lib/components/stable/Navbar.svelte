@@ -16,11 +16,11 @@
         },
         {
             label: "Posts",
-            href: "/explore/posts"
+            href: "/posts"
         },
         {
             label: "Tests",
-            href: "/explore/tests"
+            href: "/tests"
         },
         {
             label: "About",

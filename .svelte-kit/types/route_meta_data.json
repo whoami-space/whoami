@@ -3,20 +3,20 @@
 	"/about": [],
 	"/component-testing": [],
 	"/contact": [],
-	"/explore": [],
-	"/explore/posts": [],
-	"/explore/posts/mbti": [],
-	"/explore/tests": [],
-	"/explore/tests/mbti": [
-		"src/routes/explore/tests/mbti/+layout.js",
-		"src/routes/explore/tests/mbti/+layout.js"
-	],
-	"/explore/tests/mbti/result": [
-		"src/routes/explore/tests/mbti/+layout.js"
-	],
 	"/faq": [],
+	"/overview": [],
+	"/posts": [],
+	"/posts/mbti": [],
 	"/privacy-policy": [],
 	"/sitemap.xml": [
 		"src/routes/sitemap.xml/+server.ts"
+	],
+	"/tests": [],
+	"/tests/mbti": [
+		"src/routes/tests/mbti/+layout.js",
+		"src/routes/tests/mbti/+layout.js"
+	],
+	"/tests/mbti/result": [
+		"src/routes/tests/mbti/+layout.js"
 	]
 }

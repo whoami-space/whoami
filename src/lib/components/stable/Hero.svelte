@@ -1,5 +1,5 @@
 <script>
-    import { Marquee } from "flowbite-svelte";
+    import { ArrowKeyLeft, Marquee } from "flowbite-svelte";
     import Blockquote from "../custom/Blockquote.svelte";
     import { CheckCircleSolid, ChevronDoubleDownOutline, EyeSolid } from "flowbite-svelte-icons";
     import Pic from "../custom/Pic.svelte";
