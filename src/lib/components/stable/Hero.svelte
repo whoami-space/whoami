@@ -11,7 +11,7 @@
             <p class="px-medium text-medium text-center " >The space   to learn more about <Anchor href="/#self"><i>yourself</i></Anchor></p>
         </Marquee>
         
-        <Blockquote description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither" author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/>
+        <Blockquote description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/>
         <!-- <div class="mt-medium relative flex flex-col justify-center items-center">
             <div class="absolute top-[150px] min-w-[10rem] min-h-[10rem] bg-3 rounded-full text-center text-medium z-2  text-shadow-[1px_1px_0_black] flex justify-start items-center flex-col "><b>Who am i?</b></div>
             <div class="polka-dots z-1"></div>

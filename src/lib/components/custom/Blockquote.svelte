@@ -9,7 +9,7 @@
 </script>
   
   <figure class="flex flex-col justify-center items-center gap-minimal text-2 text-medium">
-    <QuoteOutline class={`text-3 w-${size} h-${size}`} />
+    <QuoteOutline class="text-3 w-medium h-medium"/>
     <Blockquote alignment="center" class={`text-2 text-${size}`} >{description}</Blockquote>
     <figcaption class="flex justify-center items-center mt-minimal space-x-3 rtl:space-x-reverse">
       <img class="w-8 h-8 rounded-full" src={picture} />

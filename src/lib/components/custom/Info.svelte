@@ -6,7 +6,7 @@
   
 
 
-<div>
-    <InfoCircleOutline class="text-3 w-minimal h-minimal translate-y-[1px]" />
+<div >
+    <InfoCircleOutline class="text-1 bg-3 rounded-xl w-5 p-[2px] h-5 translate-y-[1px]" />
     <Tooltip placement={placement} color="gray" >{tooltip}</Tooltip>
 </div>

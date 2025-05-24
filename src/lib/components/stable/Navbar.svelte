@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
     import { Spinner } from 'flowbite-svelte';
-    import { HomeOutline, LinkOutline } from 'flowbite-svelte-icons';
+    import { ChevronRightOutline, HomeOutline, LinkOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
     import ButtonSm from '../custom/ButtonSm.svelte';
@@ -33,7 +33,7 @@
   
   
   <Drawer transitionType="slide"
-  params={{duration:200}} placement="bottom" class="bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none py-medium rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+  params={{duration:200}} placement="bottom" class="bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
     <div class="flex gap-minimal justify-center items-center">
         <h3 class="text-medium" >Overview</h3>
         <Info placement="bottom" tooltip="Access main pages of website" />
@@ -42,8 +42,8 @@
                 {#each links as link}
                 <li>
                     <a href={link.href}>
-                        <ButtonSm onClick={() => (hiddenBackdropTrue = true)}>
-                            <b>{link.label}</b>
+                        <ButtonSm label={link.label} onClick={() => (hiddenBackdropTrue = true)}>
+                            <ChevronRightOutline/>
                         </ButtonSm>  
                     </a>
                 </li>

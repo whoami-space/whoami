@@ -1,6 +1,8 @@
 <script>
     import { Textarea } from 'flowbite-svelte';
-    import { AnnotationSolid, ChevronRightOutline, MailBoxSolid } from 'flowbite-svelte-icons';
+    import { AnnotationSolid, ChevronRightOutline } from 'flowbite-svelte-icons';
+    import Anchor from '../custom/Anchor.svelte';
+    import ButtonSm from '../custom/ButtonSm.svelte';
 
     let value = $state('');
    let mailto = "mailto:whoami.spacemail@gmail.com"
@@ -12,6 +14,8 @@
   <Textarea 
   class=" bg-1 text-2 p-minimal"
   id="textarea-id" placeholder="Write your message here or click the button below to go directly..." rows="4" name="message" bind:value defaultValue="" />
- <div class="w-full flex justify-center items-center">
-    <button class="drop-shadow-[2px_2px_0_white] mt-minimal bg-3 text-2 font-bold rounded-xl mx-auto text-minimal cursor-pointer"><a target="_blank" href={`${mailto}?subject=${value}`} class="redirect p-minimal flex  justify-center items-center  gap-2 ">Send by email<AnnotationSolid class="w-minimal h-minimal" /></a></button>
+ <div class="w-full flex flex-col justify-center items-center gap-[5px] m-minimal">
+    <a target="_blank" href={`${mailto}?subject=${value}`} >
+      <ButtonSm label="Send by email" ><AnnotationSolid class="w-minimal h-minimal" /></ButtonSm>
+    </a>
  </div>
