@@ -5,4 +5,4 @@
 
 
 
-<button on:click={onClick} class="p-minimal text-3 font-bold rounded-xl flex justify-center items-center gap-minimal cursor-pointer text-medium w-full  select-none border-[2px] border-dotted">{label}<slot/></button>
+<button on:click={onClick} class="p-minimal border text-3 font-bold rounded-xl flex justify-center items-center gap-minimal cursor-pointer text-medium w-full  select-none active:scale-[.8]">{label}<slot/></button>

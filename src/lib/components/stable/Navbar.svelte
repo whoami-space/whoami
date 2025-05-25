@@ -11,8 +11,8 @@
 
     let links = [
         {
-            label: "Explore Resources",
-            href: "/explore"
+            label: "Overview",
+            href: "/overview"
         },
         {
             label: "Posts",
@@ -33,29 +33,41 @@
   
   
   <Drawer transitionType="slide"
-  params={{duration:200}} placement="bottom" class="bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none rounded-t-xl text-3" backdrop={true} bind:hidden={hiddenBackdropTrue}>
+  params={{duration:200}} placement="bottom" class="bg-1 flex flex-col gap-medium justify-center items-center w-[100vw] select-none rounded-t-xl text-3 p-medium" backdrop={true} bind:hidden={hiddenBackdropTrue}>
     <div class="flex gap-minimal justify-center items-center">
-        <h3 class="text-medium" >Overview</h3>
-        <Info placement="bottom" tooltip="Access main pages of website" />
+        <b class="text-medium text-2 text-3" >Navigate</b>
+        <Info placement="bottom" tooltip="Access main pages" />
     </div>
-    <ul class="flex flex-wrap border p-medium rounded-xl justify-center items-center gap-minimal mt-minimal">
-                {#each links as link}
-                <li>
+    <ul class="flex flex-wrap rounded-xl justify-center items-center gap-minimal mt-minimal">
+        {#each links as link}
+            {#if page.url.pathname === link.href}
+                <li class="border-b pb-minimal scale-[.8]" >
                     <a href={link.href}>
                         <ButtonSm label={link.label} onClick={() => (hiddenBackdropTrue = true)}>
                             <ChevronRightOutline/>
                         </ButtonSm>  
                     </a>
                 </li>
-                {/each}       
+            {:else} 
+            <li>
+                <a href={link.href}>
+                    <ButtonSm label={link.label} onClick={() => (hiddenBackdropTrue = true)}>
+                        <ChevronRightOutline/>
+                    </ButtonSm>  
+                </a>
+            </li>
+            {/if}
+        {/each}
     </ul>
   </Drawer>
 
 <header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
     <div>
-        <a href="/" class="w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl border">
-            <HomeOutline class="w-5 h-5" />
-        </a>
+        <a href="/">
+            <ButtonSm>
+                <HomeOutline class="w-5 h-5" />
+            </ButtonSm>
+        </a> 
     </div>
     <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
         <div>
@@ -64,10 +76,10 @@
             </div>
         </div>
     </div>
-    <div>
-        <button onclick={() => (hiddenBackdropTrue = false)} class="cursor-pointer w-medium h-medium border-[0] flex justify-center items-center border border-[2px] border-dotted rounded-xl ">
-            <LinkOutline class="w-6 h-6" />
-        </button>
+    <div >
+        <ButtonSm onClick={() => (hiddenBackdropTrue = false)}>
+            <LinkOutline class="w-5 h-5" />
+        </ButtonSm>
     </div>
 </header>
 

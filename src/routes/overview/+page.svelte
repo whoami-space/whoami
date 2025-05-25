@@ -55,7 +55,7 @@
                 {/each}
         </div>    
     </Marquee>
-    <div>
+    <div class="flex flex-col gap-medium" >
         <div class="flex flex-col justify-center items-center gap-minimal">
             <h2>All Resources</h2>
             <div class="flex justify-center items-center opacity-[.5]">

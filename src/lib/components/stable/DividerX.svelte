@@ -1,1 +1,1 @@
-<div class="w-full border-b-[2px] border-dotted" ></div>
+<div class="w-full border-b" ></div>

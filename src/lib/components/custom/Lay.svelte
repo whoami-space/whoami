@@ -4,6 +4,7 @@ let {columns, nostyle = "flex flex-col gap-medium"} = $props()
 
 </script>
 
+<slot/>
 
 <div class={`grid gap-medium md:grid-cols-${columns}`}>
     <div class={nostyle} >
@@ -18,5 +19,4 @@ let {columns, nostyle = "flex flex-col gap-medium"} = $props()
     <div class={nostyle} >
         <slot name="4"/>
     </div>
-    <slot/>
 </div>
