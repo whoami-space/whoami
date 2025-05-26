@@ -7,10 +7,10 @@
     import Lay from "$lib/components/custom/Lay.svelte";
     import Main from "$lib/components/custom/Main.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
+    import Toast from "$lib/components/sloted/Toast.svelte";
     import DividerX from "$lib/components/stable/DividerX.svelte";
-    import { Tabs, TabItem, Marquee, ArrowKeyLeft, ArrowKeyRight } from "flowbite-svelte";
+    import { Marquee, ArrowKeyLeft, TabItem, Tabs } from "flowbite-svelte";
     import { ArrowUpOutline, ChevronDoubleDownOutline } from "flowbite-svelte-icons";
-
 
     let newResources = [
         {
@@ -42,11 +42,40 @@
     
 </script>
 
+
+
 <Main>
+    
     <div class="flex flex-col justify-center items-center gap-minimal">
         <h1>Overview</h1> 
         <h2>Let's find out what's new!</h2>
     </div>
+    <Tabs tabStyle="underline">
+        <TabItem open title="All">
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            <b>Profile:</b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </TabItem>
+        <TabItem title="Tests">
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            <b>Dashboard:</b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </TabItem>
+        <TabItem title="AI">
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            <b>Settings:</b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </TabItem>
+        <TabItem title="Polls">
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            <b>Users:</b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </TabItem>
+      </Tabs>
     <Marquee speed={0.1} hoverSpeed={0.1} class="flex py-minimal text-medium text-2 rounded-xl  font-bold animate-pulse">
         <ArrowKeyLeft/>
         <div class="flex justify-around items-center gap-medium">

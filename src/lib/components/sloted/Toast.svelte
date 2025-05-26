@@ -4,10 +4,12 @@
 
   let { custom } = $props()
 
-  let styles = "bg-2 text-3 rounded-xl " + custom
+  let styles = "bg-transparent border text-3 rounded-xl " + custom
 </script>
 
 <Toast class={styles} >
-  <FireSolid slot="icon" class="w-medium" />
-  <p class="text-minimal" ><slot/></p>
+  <div class="flex justify-center items-center gap-minimal " >
+    <FireSolid class="w-medium" />
+    <p class="text-minimal" ><slot/></p>
+  </div>
 </Toast>

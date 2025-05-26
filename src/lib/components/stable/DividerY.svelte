@@ -1,1 +1,1 @@
-<div class="h-full border-r" ></div>
+<div class="h-full min-h-minimal border-r" ></div>
