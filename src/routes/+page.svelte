@@ -8,16 +8,16 @@
     
 </script>
 
-<Metadata title="Whoami" description="The space to learn more about yourself" keywords="Whoami, Space, Learn, Self, Tipology, Mind, Psychology" >
-    <Main custom>
-        <Hero />
-        <div  id="self" >
+<Metadata title="Whoami" description="The space to learn more about yourself" keywords="Whoami, Space, Learn, Self, Tipology, Mind, Psychology" />
+
+<Main custom>
+    <Hero />
+    <div  id="self" >
             <div class="flex flex-col justify-center items-center pt-maximal gap-medium" >
                 <h1>Get to know your <i class="text-3" >SELF</i></h1>
-                <Pic src="https://ucarecdn.com/97402b37-459c-4099-b049-94a14f75be3d/hero.gif" alt="Animation for whoami icon" />
+                <Pic src="https://ucarecdn.com/9ba2e34d-11c8-4cb6-a0de-31e84196c03e/hero.gif" alt="Animation for whoami icon" />
                 <p>This website is a non-profit tool for anyone who wants to learn more about psychological theories in general. It's mission is to help people to learn more about themselves in an abstract way. In addition to a greater understanding of theories, there are also different tools that will help on the journey of self-knowledge, a long journey but one that will make you feel more fulfilled and authentic.</p>
                 <InlineNavigation d1="Overview" d2="About" d3="Go to top" d1link="/overview" d2link="/about" d3link="#top"/>
             </div>
-        </div>
-    </Main>
-</Metadata>
+    </div>
+</Main>

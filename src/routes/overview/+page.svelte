@@ -25,16 +25,19 @@
 
     let resources = [
         {
+            title: "Tests",
+            description: "A test is a formal and comprehensive form of assessment, generally with a greater number of questions and greater weight for the final assessment. Its preparation is done in detail to bring the best possible result.",
+            link: "",
+        },
+        {
             title: "Quizzes",
-            description: "Explore all the avaiable quizzes of the website. It includes MBTI, Eneagram and also BIG 5. These quizzes are created with a custom algorithm that allows user to define or explore the personality traits of theimselves. Every website, aplication or other tools have an specific algorithm, here it is not diferent. The case here is that the user have access in what happen behind it. When the user gets the result it gets also the most compatible pairs of their characteristics, don't only showing them just the result but also the things that are similar to it.",
-            publishDate: "2025/06/01",
-            link: "/quizzes",
+            description: "A quiz is an informal and short form of assessment. Here, the focus is on specific knowledge to stimulate learning, this knowledge always being related to psychology.",
+            link: "",
         },
         {
             title: "Posts",
-            description: "Posts are created when there is a need to explain in detail something that is within the resources, but cannot be briefly summarized. They follow a web article structure and are written by a human, although they do not have a specific authorship described. The key here is that it is not necessarily based on specific data to be written, going beyond common sense, bringing different approaches that break down some perspectives.",
-            publishDate: "2025/06/01",
-            link: "/posts",
+            description: "Posts are created when there is a need to explain in detail something that is within the resources, but cannot be briefly summarized. They follow a web article structure, going beyond common sense, bringing different approaches that break down some perspectives. ",
+            link: "",
         },
     ]
 
@@ -66,29 +69,24 @@
                 <div class="grid md:grid-cols-2 gap-medium">
                     {#each resources as resource}
                         <Card label={resource.title} link={resource.link} > 
-                            <div class="flex flex-col items-center gap-medium p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
-                                <div class="flex flex-col justify-center items-center gap-minimal">
-                                    <h2 >
-                                        Description
-                                    </h2>
-                                    <p >{resource.description}</p>
-                                </div>
-                                <DividerX/>
-                                <div class="flex flex-col justify-center items-center gap-minimal">
-                                    <b>Published at: {resource.publishDate}</b>
-                                </div>
-                            </div>
+                                <p>{resource.description}</p>
                         </Card> 
                     {/each}
                     </div>
             </div>
         </TabItem>
-        <TabItem disabled activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Quizzes">
+        <TabItem disabled activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Tests">
           <p class="text-sm text-gray-500 dark:text-gray-400">
             <b>Dashboard:</b>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </TabItem>
+        <TabItem disabled activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Quizzes">
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              <b>Dashboard:</b>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </TabItem>
         <TabItem disabled activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="AI">
           <p class="text-sm text-gray-500 dark:text-gray-400">
             <b>Settings:</b>

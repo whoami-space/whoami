@@ -14,8 +14,7 @@ export const nodes = [
 	() => import('./nodes/10'),
 	() => import('./nodes/11'),
 	() => import('./nodes/12'),
-	() => import('./nodes/13'),
-	() => import('./nodes/14')
+	() => import('./nodes/13')
 ];
 
 export const server_loads = [];
@@ -23,16 +22,15 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [3],
 		"/about": [4],
-		"/component-testing": [5],
-		"/contact": [6],
-		"/faq": [7],
-		"/overview": [8],
-		"/posts": [9],
-		"/posts/mbti": [10],
-		"/privacy-policy": [11],
-		"/quizzes": [12],
-		"/quizzes/mbti-personality-test": [13,[2]],
-		"/quizzes/mbti-personality-test/result": [14,[2]]
+		"/contact": [5],
+		"/faq": [6],
+		"/overview": [7],
+		"/posts": [8],
+		"/posts/mbti": [9],
+		"/privacy-policy": [10],
+		"/tests": [11],
+		"/tests/mbti-personality-test": [12,[2]],
+		"/tests/mbti-personality-test/result": [13,[2]]
 	};
 
 export const hooks = {

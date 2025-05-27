@@ -24,7 +24,7 @@
 
 <Main>
     <div class="flex flex-col justify-center items-center gap-minimal">
-        <h1 class="text-maximal text-center" >Quizzes</h1> 
+        <h1 class="text-maximal text-center" >Tests</h1> 
         <div class="flex justify-center -tems-center opacity-[.5]">
             <div>
                 <ArrowUpOutline/>
@@ -36,10 +36,10 @@
         {#each tests as test}
         <Card label={test.title} link={test.link} >
             <div class="flex flex-col items-center gap-medium p-medium min-h-[50vh] max-h-[50vh] overflow-y-scroll">
-                <h2 class="text-medium" >
+                <h3>
                     Description
-                </h2>
-                <p class="text-minimal text-justify" >{test.description}</p>
+                </h3>
+                <p>{test.description}</p>
             </div>
         </Card> 
         {/each}

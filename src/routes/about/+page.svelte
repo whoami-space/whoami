@@ -9,7 +9,7 @@
 
 <Main>
     <h1>About the project</h1>
-    <Pic alt="Representation of about page" src="https://ucarecdn.com/2a81533f-bd01-4f14-846f-b6009fafb407/about.png" />
+    <Pic alt="About page image" src="https://ucarecdn.com/acb11743-6357-490f-b626-27191bf73e5b/about.png" />
     <h2>Objective</h2>
             <p>In short, the objective of this website is to allow greater immersion in self-knowledge to users in the most accessible way possible. And how is this done?   Through tools such as personality tests, through articles covering complex concepts or even through more direct contact if necessary. If you are a psychologist or have knowledge in psychology, you can also collaborate with ideas by <Anchor href="/contact">contacting</Anchor>
             </p>

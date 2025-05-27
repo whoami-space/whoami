@@ -1,22 +1,21 @@
 {
 	"/": [],
 	"/about": [],
-	"/component-testing": [],
 	"/contact": [],
 	"/faq": [],
 	"/overview": [],
 	"/posts": [],
 	"/posts/mbti": [],
 	"/privacy-policy": [],
-	"/quizzes": [],
-	"/quizzes/mbti-personality-test": [
-		"src/routes/quizzes/mbti-personality-test/+layout.js",
-		"src/routes/quizzes/mbti-personality-test/+layout.js"
-	],
-	"/quizzes/mbti-personality-test/result": [
-		"src/routes/quizzes/mbti-personality-test/+layout.js"
-	],
 	"/sitemap.xml": [
 		"src/routes/sitemap.xml/+server.ts"
+	],
+	"/tests": [],
+	"/tests/mbti-personality-test": [
+		"src/routes/tests/mbti-personality-test/+layout.js",
+		"src/routes/tests/mbti-personality-test/+layout.js"
+	],
+	"/tests/mbti-personality-test/result": [
+		"src/routes/tests/mbti-personality-test/+layout.js"
 	]
 }
