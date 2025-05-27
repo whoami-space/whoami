@@ -13,10 +13,11 @@
 </script>
 
 
-    <div class="flex flex-col gap-minimal p-medium rounded-xl border">
+    <div class="relative flex flex-col gap-minimal p-medium rounded-xl border">
+        <Indicator color="none" class="absolute left-minimal top-minimal border" />
         <div class="flex flex-col text-2 rounded-xl justify-center items-center gap-medium">
             <div class="flex flex-col gap-minimal justify-center items-center" >
-                <h2 class="flex justify-center items-center gap-minimal text-3" ><Indicator color="none" class="border" />{label}</h2>
+                <h2 class="text-3" >{label}</h2>
                 <a href={link}>
                     <ButtonSm label="Access" ><ChevronRightOutline class="w-minimal h-minimal" /></ButtonSm>
                 </a>
