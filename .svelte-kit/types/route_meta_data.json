@@ -8,15 +8,15 @@
 	"/posts": [],
 	"/posts/mbti": [],
 	"/privacy-policy": [],
+	"/quizzes": [],
+	"/quizzes/mbti-personality-test": [
+		"src/routes/quizzes/mbti-personality-test/+layout.js",
+		"src/routes/quizzes/mbti-personality-test/+layout.js"
+	],
+	"/quizzes/mbti-personality-test/result": [
+		"src/routes/quizzes/mbti-personality-test/+layout.js"
+	],
 	"/sitemap.xml": [
 		"src/routes/sitemap.xml/+server.ts"
-	],
-	"/tests": [],
-	"/tests/mbti": [
-		"src/routes/tests/mbti/+layout.js",
-		"src/routes/tests/mbti/+layout.js"
-	],
-	"/tests/mbti/result": [
-		"src/routes/tests/mbti/+layout.js"
 	]
 }

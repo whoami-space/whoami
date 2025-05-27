@@ -1,11 +1,13 @@
 <script>
     import { page } from '$app/state';
     import { Spinner } from 'flowbite-svelte';
-    import { ChevronRightOutline, HomeOutline, LinkOutline } from 'flowbite-svelte-icons';
+    import { ChevronRightOutline, ClockArrowOutline, HomeOutline, LinkOutline, RedoOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
     import ButtonSm from '../custom/ButtonSm.svelte';
     import Info from '../custom/Info.svelte';
+
+
 
     let hiddenBackdropTrue = $state(true);
 
@@ -19,8 +21,8 @@
             href: "/posts"
         },
         {
-            label: "Tests",
-            href: "/tests"
+            label: "Quizzes",
+            href: "/quizzes"
         },
         {
             label: "About",
@@ -62,24 +64,22 @@
   </Drawer>
 
 <header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
-    <div>
-        <a href="/">
-            <ButtonSm>
-                <HomeOutline class="w-5 h-5" />
-            </ButtonSm>
-        </a> 
+    <div id="loader">
+        <Spinner color="primary" size="6" />
     </div>
-    <div class="flex flex-col justify-center items-center translate-y-[0.5rem] gap-2" >
+    <div class="flex justify-center items-center gap-minimal" >
         <div>
-            <div id="loader">
-                <Spinner color="primary" size="6" />
-            </div>
+            <a class="notranslate" translate="no" href="/">
+                <ButtonSm label="Home" >
+                    <HomeOutline class="w-5 h-5" />
+                </ButtonSm>
+            </a> 
         </div>
-    </div>
-    <div >
-        <ButtonSm onClick={() => (hiddenBackdropTrue = false)}>
-            <LinkOutline class="w-5 h-5" />
-        </ButtonSm>
+        <div >
+            <ButtonSm label="Navigate" onClick={() => (hiddenBackdropTrue = false)}>
+                    <LinkOutline class="w-5 h-5" />
+                </ButtonSm>
+        </div>
     </div>
 </header>
 

@@ -30,9 +30,9 @@ export const dictionary = {
 		"/posts": [9],
 		"/posts/mbti": [10],
 		"/privacy-policy": [11],
-		"/tests": [12],
-		"/tests/mbti": [13,[2]],
-		"/tests/mbti/result": [14,[2]]
+		"/quizzes": [12],
+		"/quizzes/mbti-personality-test": [13,[2]],
+		"/quizzes/mbti-personality-test/result": [14,[2]]
 	};
 
 export const hooks = {

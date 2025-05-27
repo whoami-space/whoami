@@ -6,7 +6,6 @@
     import Acordion from "$lib/components/themed/Acordion.svelte";
     import { redirect } from "@sveltejs/kit";
     import { writable } from "svelte/store";
-    let { data } = $props()
 
     import { Button, List, Modal, P } from "flowbite-svelte";
     import ButtonSm from "$lib/components/custom/ButtonSm.svelte";

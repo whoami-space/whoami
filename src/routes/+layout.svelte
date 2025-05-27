@@ -9,7 +9,6 @@
 
 </script>
 
-
 <div>
 	<div id="top" ></div>
 	<Navbar/>
