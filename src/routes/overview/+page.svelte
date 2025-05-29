@@ -104,13 +104,13 @@
             </div>
         </div>
         </TabItem>
-        <TabItem disabled inactiveClasses="p-minimal text-2 cursor-pointer" activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Quizzes">
+        <TabItem disabled inactiveClasses="p-minimal text-2 cursor-pointer opacity-[.5]" activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Quizzes">
             <p class="text-sm text-gray-500 dark:text-gray-400">
               <b>Quizzes</b>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </TabItem>
-        <TabItem disabled inactiveClasses="p-minimal text-2 cursor-pointer"  activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Surveys">
+        <TabItem disabled inactiveClasses="p-minimal text-2 cursor-pointer opacity-[.5]"  activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="Surveys">
           <p class="text-sm text-gray-500 dark:text-gray-400">
             <b>Surveys</b>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

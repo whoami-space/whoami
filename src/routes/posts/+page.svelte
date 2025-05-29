@@ -7,7 +7,10 @@
     import Pic from "$lib/components/custom/Pic.svelte";
     import DividerX from "$lib/components/stable/DividerX.svelte";
     import { Tabs, TabItem, Indicator } from "flowbite-svelte";
-    import { ArrowUpOutline } from "flowbite-svelte-icons";
+    import { AlignLeftOutline, ArrowUpOutline, CalendarMonthOutline, ClockOutline, LockTimeOutline, TextUnderlineOutline } from "flowbite-svelte-icons";
+
+    let date = new Date()
+    let currentDate = `${date.getUTCDate()}/${date.getUTCMonth()}/${date.getFullYear()}`
 
 
     let posts = [
@@ -15,7 +18,7 @@
             title: "How does MBTI theory works",
             img: "https://ucarecdn.com/2a81533f-bd01-4f14-846f-b6009fafb407/about.png",
             link: "/posts/mbti",
-            publishDate: "2025/06/01"
+            publishDate: "2025/6/1"
         },
     ]
 
@@ -37,12 +40,15 @@
         <div class="grid md:grid-cols-2 gap-medium">
             {#each posts as post}
                 <Card label={post.title} link={post.link} >
-                        <div class="flex flex-col justify-center items-center gap-minimal" >
-                            <Pic src={post.img}/> 
-                            <div class="flex justify-center items-center gap-minimal" >
-                                <b>Published at: {post.publishDate}</b>
-                            </div> 
-                        </div>
+                    <div class="flex justify-center items-center gap-minimal" >
+                        {#if post.publishDate <= currentDate}
+                            <ClockOutline/>
+                            <b>In: {post.publishDate}</b>
+                        {:else}
+                            <CalendarMonthOutline/>
+                            <b>Published at: {post.publishDate}</b>
+                        {/if}
+                    </div>
                 </Card> 
             {/each}
         </div>
