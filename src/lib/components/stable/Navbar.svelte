@@ -6,6 +6,7 @@
     import Anchor from '../custom/Anchor.svelte';
     import ButtonSm from '../custom/ButtonSm.svelte';
     import Info from '../custom/Info.svelte';
+    import DividerX from './DividerX.svelte';
 
 
 
@@ -36,38 +37,29 @@
   
   
   <Drawer transitionType="slide"
-  params={{duration:3000}} placement="bottom" class="relative bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none text-3 pt-medium" backdrop={false} bind:hidden={hiddenBackdropTrue}>
-    <div class="flex gap-minimal justify-center items-center">
-        <b class="text-medium" >Navigate</b>
-        <Info placement="bottom" tooltip="Access main pages" />
-    </div>
-    <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
-        {#each links as link}
-            {#if page.url.pathname === link.href}
-                <li class="border-b pb-minimal scale-[.8]" >
-                    <a href={link.href}>
-                        <ButtonSm label={link.label} onClick={() => (hiddenBackdropTrue = true)}>
-                            <ChevronRightOutline/>
-                        </ButtonSm>  
-                    </a>
+ placement="top" class="relative bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none text-3 pt-medium" backdrop={false} bind:hidden={hiddenBackdropTrue}>
+    <div class="p-medium border rounded-xl flex flex-col justify-center items-center gap-minimal">
+            <h3>Navigate</h3>
+            <DividerX />
+            <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
+            {#each links as link}
+                {#if page.url.pathname === link.href}
+                    <li class="line-through" >
+                        <Anchor onClick={() => (hiddenBackdropTrue = true)} href={link.href}>
+                           {link.label} 
+                        </Anchor>
+                    </li>
+                {:else} 
+                <li>
+                    <Anchor onClick={() => (hiddenBackdropTrue = true)} href={link.href}>
+                        {link.label} 
+                     </Anchor>
                 </li>
-            {:else} 
-            <li>
-                <a href={link.href}>
-                    <ButtonSm label={link.label} onClick={() => (hiddenBackdropTrue = true)}>
-                        <ChevronRightOutline/>
-                    </ButtonSm>  
-                </a>
-            </li>
-            {/if}
-        {/each}
-    </ul>
-    <div>
-        <ButtonSm onClick={() => (hiddenBackdropTrue = true)} >
-            <ArrowDownOutline class="w-5 h-5" />
-        </ButtonSm>
+                {/if}
+            {/each}
+        </ul>
     </div>
-  </Drawer>
+</Drawer>
 
 <header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
         <div id="loader">
@@ -82,11 +74,20 @@
                     </ButtonSm>
                 </a> 
             </div>
-            <div >
-                <ButtonSm onClick={() => (hiddenBackdropTrue = false)} >
+            {#if hiddenBackdropTrue}
+                <div >
+                    <ButtonSm onClick={() => (hiddenBackdropTrue = false)} >
+                            <ArrowDownOutline class="w-5 h-5" />
+                    </ButtonSm>
+                </div>
+            {:else}
+                <div>
+                    <ButtonSm onClick={() => (hiddenBackdropTrue = true)} >
                         <ArrowUpOutline class="w-5 h-5" />
-                </ButtonSm>
-            </div>
+                    </ButtonSm>
+                </div>
+            {/if}
+            
         </div>
 </header>
 
