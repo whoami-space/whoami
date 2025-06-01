@@ -9,14 +9,34 @@
 
 </script>
 
-<div>
+<div >
 	<div id="top" ></div>
 	<Navbar/>
-	<div class="animate-[pulse_2s_ease-in_forwards]" >
+	<div id="content" >
 		{@render children()}
 	</div>
 	<Footer/>
 </div>
+
+
+<style>
+
+#content {
+	animation: show 2.5s ease-in forwards;
+	animation-iteration-count: 1;
+	overflow-x: hidden;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+</style>
 
 
 

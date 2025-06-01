@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
     import { Spinner } from 'flowbite-svelte';
-    import { AlignLeftOutline, AlignRightOutline, ArrowDownOutline, ArrowUpOutline, ChevronRightOutline, ClockArrowOutline, HomeOutline, LinkOutline, ListOutline, PlusOutline, RedoOutline } from 'flowbite-svelte-icons';
+    import { AlignLeftOutline, AlignRightOutline, ArrowDownOutline, ArrowUpOutline, CheckOutline, ChevronRightOutline, ClockArrowOutline, HomeOutline, LinkOutline, ListOutline, PlusOutline, RedoOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
     import ButtonSm from '../custom/ButtonSm.svelte';
@@ -74,7 +74,7 @@
     </div>
 </Drawer>
 
-<header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
+<header class="flex top-0 w-full pt-medium px-medium justify-between items-start gap-minimal text-3" >
             <div >
                 <a class="notranslate" translate="no" href="/">
                     <ButtonSm>
@@ -82,8 +82,13 @@
                     </ButtonSm>
                 </a> 
             </div>
-            <div id="loader">
-                <Spinner color="primary" size="6" />
+            <div class="relative flex justify-center items-center">
+                <div class="absolute top-[20px] flex justify-center gap-[2px] items-center" id="loader">
+                    <Spinner color="primary" size="8" />
+                </div>
+                <div class="absolute top-[25px] flex justify-center items-center gap-minimal text-3" id="loaded">
+                    <CheckOutline/>
+                </div>
             </div>
             {#if hiddenBackdropTrue}
                 <div >
@@ -105,7 +110,7 @@
     <style>
 
         #loader {
-            animation: fadeout 3s ease-out forwards;
+            animation: fadeout 3.5s ease-in forwards;
             animation-iteration-count: 1;
         }
             
@@ -113,14 +118,44 @@
             0% {
                     opacity: 1;
             }
-            90% {
+            50% {
                     opacity: 1;
+            }
+            80% {
+                    opacity: 0;
+                    visibility: hidden;
             }
             100% {
                     opacity: 0;
                     visibility: hidden;
             }
         }
+
+        #loaded {
+            animation: loaded 4s ease-in-out forwards;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes loaded {
+            0% {
+                    opacity: 0;
+                    visibility: hidden;
+            }
+            60% {
+                    opacity: 0;
+                    visibility: hidden;
+            }
+            70% {
+                    opacity: 0.5;
+                    visibility: visible;
+            }
+            100% {
+                    opacity: 0;
+                    visibility: hidden;
+            }
+        }
+
+
             
     </style>
 {/if}

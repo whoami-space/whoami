@@ -7,7 +7,7 @@
     import InlineNavigation from "../custom/InlineNavigation.svelte";
 </script>
 
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center from-3 to-1">
     
         <!-- <div class="mt-medium relative flex flex-col justify-center items-center">
             <div class="absolute top-[150px] min-w-[10rem] min-h-[10rem] bg-3 rounded-full text-center text-medium z-2  text-shadow-[1px_1px_0_black] flex justify-start items-center flex-col "><b>Who am i?</b></div>
