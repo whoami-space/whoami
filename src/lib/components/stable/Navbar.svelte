@@ -38,13 +38,26 @@
   
   <Drawer transitionType="slide"
  placement="top" class="relative bg-1 flex flex-col gap-minimal justify-center items-center w-[100vw] select-none text-3 pt-medium" backdrop={false} bind:hidden={hiddenBackdropTrue}>
-    <div class="p-medium border rounded-xl flex flex-col justify-center items-center gap-minimal">
+    <div class="rounded-xl flex flex-col justify-center items-center gap-minimal">
             <h3>Navigate</h3>
             <DividerX />
             <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
+                {#if page.url.pathname === "/"}
+                    <li class="font-bold" >
+                        <Anchor onClick={() => (hiddenBackdropTrue = true)} href="/">
+                           Home
+                        </Anchor>
+                    </li>
+                {:else}
+                <li >
+                    <Anchor onClick={() => (hiddenBackdropTrue = true)} href="/">
+                       Home
+                    </Anchor>
+                </li>
+                {/if}
             {#each links as link}
                 {#if page.url.pathname === link.href}
-                    <li class="line-through" >
+                    <li class="font-bold" >
                         <Anchor onClick={() => (hiddenBackdropTrue = true)} href={link.href}>
                            {link.label} 
                         </Anchor>
@@ -62,17 +75,15 @@
 </Drawer>
 
 <header class="flex top-0 w-full pt-medium px-medium justify-between items-center gap-minimal text-3" >
-        <div id="loader">
-            <Spinner color="primary" size="6" />
-        </div>
-       <div>
-        <div class="flex gap-minimal justify-center items-center" >
             <div >
                 <a class="notranslate" translate="no" href="/">
                     <ButtonSm>
                         <HomeOutline class="w-5 h-5" />
                     </ButtonSm>
                 </a> 
+            </div>
+            <div id="loader">
+                <Spinner color="primary" size="6" />
             </div>
             {#if hiddenBackdropTrue}
                 <div >
@@ -87,8 +98,6 @@
                     </ButtonSm>
                 </div>
             {/if}
-            
-        </div>
 </header>
 
 
@@ -96,7 +105,7 @@
     <style>
 
         #loader {
-            animation: fadeout 4s ease-out forwards;
+            animation: fadeout 3s ease-out forwards;
             animation-iteration-count: 1;
         }
             

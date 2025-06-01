@@ -4,4 +4,4 @@
 
 
 
-<a on:click={onClick} href={href} target={target} class="rounded-xl text-3"><slot/></a>
+<a on:click={onClick} href={href} target={target} class="rounded-xl text-3 underline"><slot/></a>

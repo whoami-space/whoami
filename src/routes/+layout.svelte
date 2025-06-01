@@ -12,7 +12,7 @@
 <div>
 	<div id="top" ></div>
 	<Navbar/>
-	<div>
+	<div class="animate-[pulse_2s_ease-in_forwards]" >
 		{@render children()}
 	</div>
 	<Footer/>
