@@ -4,39 +4,28 @@
 	import Footer from '$lib/components/stable/Footer.svelte';
 	import Loader from '$lib/components/stable/Loader.svelte';
     import { page } from '$app/state';
+    import Cookies from '$lib/components/sloted/Cookies.svelte';
+    import Note from '$lib/components/sloted/Note.svelte';
 	
 	let { children } = $props();
 
 </script>
+<div id="top" ></div>
 
-<div >
-	<div id="top" ></div>
+<div class="p-minimal flex flex-col justify-center gap-minimal" >
 	<Navbar/>
-	<div id="content" >
+	<section class="flex flex-wrap gap-minimal rounded-xl overflow-x-scroll">
+		<Cookies>Low use of Cookies!</Cookies>
+		<Note>The website is currently in test phase!</Note>
+	</section>
+	<main class="border rounded-xl" >
 		{@render children()}
-	</div>
+	</main>
 	<Footer/>
 </div>
 
 
-<style>
 
-#content {
-	animation: show 2.5s ease-in forwards;
-	animation-iteration-count: 1;
-	overflow-x: hidden;
-}
-
-@keyframes show {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-</style>
 
 
 

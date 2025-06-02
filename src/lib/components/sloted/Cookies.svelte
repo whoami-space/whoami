@@ -1,9 +1,9 @@
 <script>
     import { Toast } from 'flowbite-svelte';
-    import { CookieSolid } from 'flowbite-svelte-icons';
+    import { CookieOutline } from 'flowbite-svelte-icons';
   </script>
   
-  <Toast class="bg-2 text-3 rounded-xl" >
-    <CookieSolid slot="icon" class="w-medium"  />
+  <Toast color="none" class="min-w-full flex bg-1 border rounded-xl" >
+    <CookieOutline slot="icon" class="w-5 h-5 text-3"  />
     <p class="text-minimal" ><slot/></p>
   </Toast>

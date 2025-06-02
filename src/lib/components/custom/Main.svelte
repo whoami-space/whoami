@@ -1,8 +1,30 @@
 <script>
-    const defaultstyle = "p-medium overflow-scroll scroll-smooth "
-    let { custom = "flex flex-col items-center justify-center gap-medium", childreen } = $props();
+    const defaultstyle = "p-medium py-maximal overflow-scroll scroll-smooth "
+    let { custom = "flex flex-col items-center justify-center gap-medium " } = $props();
 </script>
 
-<main class={defaultstyle + custom } >
+<section class={defaultstyle + custom } >
     <slot/>
-</main>
+</section>
+
+
+
+
+<style>
+
+    section {
+        animation: show 2.5s ease-in forwards;
+        animation-iteration-count: 1;
+        overflow-x: hidden;
+    }
+    
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+</style>

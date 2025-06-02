@@ -7,7 +7,7 @@
     import Lay from "$lib/components/custom/Lay.svelte";
     import Main from "$lib/components/custom/Main.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
-    import Toast from "$lib/components/sloted/Toast.svelte";
+    import Toast from "$lib/components/sloted/Note.svelte";
     import DividerX from "$lib/components/stable/DividerX.svelte";
     import { Marquee, ArrowKeyLeft, TabItem, Tabs } from "flowbite-svelte";
     import { ArrowUpOutline, ChevronDoubleDownOutline, FaceGrinStarsOutline } from "flowbite-svelte-icons";
