@@ -16,11 +16,12 @@
         <ChevronDoubleDownOutline class="m-minimal mt-medium w-medium h-medium" />
         <ChevronDoubleDownOutline class="m-minimal w-medium h-medium opacity-[.6]" />
         <ChevronDoubleDownOutline class="m-minimal w-medium h-medium opacity-[.3]" />
-            <div class="py-medium" id="self" >
-                <Blockquote  description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/> 
-            </div>  
-        <InlineNavigation d1="Overview" d2="About" d3="Go to top" d1link="/overview" d2link="/about" d3link="#top"/>
+        <div class="py-medium" id="self" >
+            <Blockquote  description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/> 
+        </div>  
     </div>
+    
+    <InlineNavigation d1="Overview" d2="About" d3="Go to top" d1link="/overview" d2link="/about" d3link="#top"/>
 
 
 

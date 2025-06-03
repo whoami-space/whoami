@@ -998,6 +998,11 @@ flowbite-svelte-icons@^2.1.1:
     clsx "^2.1.1"
     tailwind-merge "^3.3.0"
 
+flowbite-svelte-illustrations@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/flowbite-svelte-illustrations/-/flowbite-svelte-illustrations-1.0.4.tgz#d4a27519a680fc69fbaf999474ba9e1380f082dc"
+  integrity sha512-KwZsov9wshWj+3hu85cQJ4xbxkp7hAzhlebRogKBTSosxbEU6muwUKvv1Sk/qTtLMIibtpI8jOBPDggM4z6NnA==
+
 flowbite-svelte@^0.48.6:
   version "0.48.6"
   resolved "https://registry.yarnpkg.com/flowbite-svelte/-/flowbite-svelte-0.48.6.tgz#627526794a80f30a452ffb362ae10f5a2696ecbd"

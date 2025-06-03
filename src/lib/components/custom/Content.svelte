@@ -44,6 +44,7 @@
             100% {
                     backdrop-filter: blur(0);
                     display: none;
+                    visibility: hidden;
             }
     }
 
