@@ -3,12 +3,13 @@
     import Pic from "$lib/components/custom/Pic.svelte";
     import Lay from "$lib/components/custom/Lay.svelte";
     import Anchor from "$lib/components/custom/Anchor.svelte";
+    import DividerX from "$lib/components/stable/DividerX.svelte";
 </script>
 
 
 
 <Content>
-    <h1>About the project</h1>
+    <h1 class="" >About the project</h1>
     <Pic alt="About page image" src="https://ucarecdn.com/acb11743-6357-490f-b626-27191bf73e5b/about.png" />
     <h2>Objective</h2>
             <p>In short, the objective of this website is to allow greater immersion in self-knowledge to users in the most accessible way possible. And how is this done?   Through tools such as personality tests, through articles covering complex concepts or even through more direct contact if necessary. If you are a psychologist or have knowledge in psychology, you can also collaborate with ideas by <Anchor href="/contact">contacting</Anchor>

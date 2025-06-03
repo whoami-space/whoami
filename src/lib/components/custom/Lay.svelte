@@ -1,6 +1,6 @@
 <script>
 
-let {columns, nostyle = "flex flex-col gap-medium"} = $props()
+let {columns, nostyle = "flex flex-col gap-medium p-minimal"} = $props()
 
 </script>
 

@@ -14,7 +14,7 @@
 
 
     <div class="relative flex flex-col gap-minimal p-medium rounded-xl border">
-        <Indicator color="none" class="absolute left-minimal top-minimal border" />
+        <Indicator color="none" class="absolute left-minimal top-minimal border w-minimal h-minimal" />
         <div class="flex flex-col text-2 rounded-xl justify-center items-center gap-medium">
             <div class="flex flex-col gap-minimal justify-center items-center" >
                 <h2 class="text-3" >{label}</h2>
