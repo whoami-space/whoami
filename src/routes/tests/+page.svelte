@@ -3,7 +3,7 @@
 <script>
     import Card from "$lib/components/custom/Card.svelte";
     import Lay from "$lib/components/custom/Lay.svelte";
-    import Main from "$lib/components/custom/Main.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     import { Tabs, TabItem } from "flowbite-svelte";
     import { ArrowUpOutline } from "flowbite-svelte-icons";
 
@@ -22,7 +22,7 @@
     
 </script>
 
-<Main>
+<Content>
     <div class="bg-1 flex flex-col gap-medium" >
         <div class="flex flex-col justify-center items-center gap-minimal">
             <h1>Tests</h1>
@@ -41,7 +41,7 @@
             {/each}
         </div>
     </div>
-</Main>
+</Content>
 
 
     

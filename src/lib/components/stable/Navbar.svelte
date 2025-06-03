@@ -1,6 +1,6 @@
 <script>
     import { page } from '$app/state';
-    import { Spinner } from 'flowbite-svelte';
+    import { Indicator, Spinner } from 'flowbite-svelte';
     import { AlignLeftOutline, AlignRightOutline, ArrowDownOutline, ArrowUpOutline, CheckOutline, ChevronRightOutline, ClockArrowOutline, HomeOutline, LinkOutline, ListOutline, PlusOutline, RedoOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
@@ -36,7 +36,8 @@
 
   
   
-  <Drawer transitionType="slide"
+  <div class="border rounded-xl" >
+    <Drawer transitionType="slide"
  placement="top" class="relative bg-1 flex flex-col gap-minimal justify-center items-center w-full select-none text-3 p-minimal rounded-xl" backdrop={false} bind:hidden={hiddenBackdropTrue}>
     <div class="rounded-xl flex flex-col justify-center items-center gap-minimal">
             <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
@@ -71,23 +72,12 @@
         </ul>
     </div>
 </Drawer>
+  </div>
 
-<header class="flex w-full p-minimal justify-between items-start gap-minimal text-3 border rounded-xl" >
-            <div >
-                <a class="notranslate" translate="no" href="/">
-                    <ButtonSm>
-                        <HomeOutline class="w-5 h-5" />
-                    </ButtonSm>
-                </a> 
-            </div>
-            <div class="relative flex justify-center items-center">
-                <div class="absolute top-[13px] flex justify-center gap-[2px] items-center" id="loader">
-                    <Spinner color="primary" size="8" />
-                </div>
-                <div class="absolute top-[18px] flex justify-center items-center gap-minimal text-3" id="loaded">
-                    <CheckOutline/>
-                </div>
-            </div>
+<header class="flex w-full p-minimal justify-between items-center gap-minimal text-3 border rounded-xl mt-minimal" >
+            <a href="/" class="flex gap-2 justify-center items-center p-minimal rounded-xl border">
+                <b>whoami.space</b>
+            </a>
             {#if hiddenBackdropTrue}
                 <div >
                     <ButtonSm onClick={() => (hiddenBackdropTrue = false)} >

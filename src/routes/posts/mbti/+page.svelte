@@ -1,12 +1,11 @@
 <script>
-    import Main from "$lib/components/custom/Main.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     import Metadata from "$lib/components/custom/Metadata.svelte";
 </script>
 
 <Metadata
-title=""
->
-    <Main>
+title="MBTI"
+/>
+    <Content>
        ... 
-    </Main>
-</Metadata>
+    </Content>

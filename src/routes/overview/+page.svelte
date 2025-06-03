@@ -5,9 +5,8 @@
     import Anchor from "$lib/components/custom/Anchor.svelte";
     import Card from "$lib/components/custom/Card.svelte";
     import Lay from "$lib/components/custom/Lay.svelte";
-    import Main from "$lib/components/custom/Main.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
-    import Toast from "$lib/components/sloted/Note.svelte";
     import DividerX from "$lib/components/stable/DividerX.svelte";
     import { Marquee, ArrowKeyLeft, TabItem, Tabs } from "flowbite-svelte";
     import { ArrowUpOutline, ChevronDoubleDownOutline, FaceGrinStarsOutline } from "flowbite-svelte-icons";
@@ -56,7 +55,7 @@
 
 
 
-<Main custom="flex flex-col justify-center items-center gap-minimal" >
+<Content custom="flex flex-col justify-center items-center gap-minimal" >
     
     <div class="flex flex-col justify-center items-center gap-minimal">
         <h1>Overview</h1> 
@@ -117,7 +116,7 @@
           </p>
         </TabItem>
       </Tabs>
-</Main>
+</Content>
 
 
 <style>

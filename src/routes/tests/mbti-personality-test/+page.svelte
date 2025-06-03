@@ -11,7 +11,7 @@
     import ButtonSm from "$lib/components/custom/ButtonSm.svelte";
     import { CheckCircleSolid, BackwardStepSolid, ChevronDoubleRightOutline } from "flowbite-svelte-icons";
     import { Indicator } from "flowbite-svelte";
-    import Main from "$lib/components/custom/Main.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
 
 
     let open = $state(false);
@@ -45,7 +45,7 @@
 
 
 
-<Main custom="flex flex-col gap-medium justify-center items-center">
+<Content custom="flex flex-col gap-medium justify-center items-center">
   <h1>MBTI Personality Test</h1>
   <div class=" flex flex-col items-center gap-minimal">
     <ol class="bg-2 p-[10px] rounded-full flex flex-wrap gap-[10px] items-center">
@@ -68,7 +68,7 @@
   <h2>How does it work?</h2>
   <p>The MBTI personality test works using a logical model based on the structure of the MBTI theory itself. This theory consists of 8 cognitive functions that direct the way we prefer to deal with ourselves and the world around us. The cognitive functions are NE (EXTROVERTED INTUITION), SE (EXTROVERTED SENSING), SI (INTROVERTED SENSING), NI (INTROVERTED INTUITION, TE (EXTROVERTED THINKING), TI (INTROVERTED THINKING), FE (EXTROVERTED FEELING) AND FI (INTROVERTED FEELING). Each type, of the 16, carries with it 4 cognitive functions that define its consciousness and decisions. For example, the ISTJ type uses SI, TE, FI, NE as its cognitive functions, so the most used is SI and the least used is NE, if we look only at the conscious spectrum. The functions are ordered from most to least used, if a function is being used more frequently in relation to the others we call it the DOMINANT FUNCTION. In general, there are 16 types and among these types there will always be common cognitive functions. Each type is unique, with a pair of dominant and auxiliary functions that guide your personality and your self-development in life. This test is like this logical system, based on the MBTI theory (Myers-Briggs Type Indicator) and a website-specific algorithm that provides a final result depending on the user's propositions.</p>
 
-</Main>
+</Content>
 
 
 <!--Modal 1-->

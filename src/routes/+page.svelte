@@ -1,18 +1,18 @@
 <script>
-    import Main from "$lib/components/custom/Main.svelte";
     import Hero from "$lib/components/stable/Hero.svelte";
     import InlineNavigation from "$lib/components/custom/InlineNavigation.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
     import Metadata from "$lib/components/custom/Metadata.svelte";
     import Anchor from "$lib/components/custom/Anchor.svelte";
     import FadeIn from "$lib/components/transitions/FadeIn.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     
     
 </script>
 
 <Metadata title="Whoami" description="The space to learn more about yourself" keywords="Whoami, Space, Learn, Self, Tipology, Mind, Psychology" />
 
-<Main custom>
+<Content custom>
     <div >
         <div class="flex flex-col justify-center items-center gap-medium" >
             <h1>Who am I?</h1>
@@ -21,4 +21,4 @@
         </div>
     </div>
     <Hero />
-</Main>
+</Content>

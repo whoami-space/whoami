@@ -18,7 +18,7 @@
 
 
 
-<footer class="w-full p-minimal flex flex-wrap justify-center items-center gap-minimal border rounded-xl">
+<footer class="mt-minimal w-full p-minimal flex flex-wrap justify-center items-center gap-minimal border rounded-xl">
     <p class="font-light" >whoami.space - {year}</p>
     <div class="flex flex-wrap justify-center items-cengter gap-minimal">
         {#each links as link }

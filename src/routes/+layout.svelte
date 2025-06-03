@@ -4,22 +4,25 @@
 	import Footer from '$lib/components/stable/Footer.svelte';
 	import Loader from '$lib/components/stable/Loader.svelte';
     import { page } from '$app/state';
-    import Cookies from '$lib/components/sloted/Cookies.svelte';
-    import Note from '$lib/components/sloted/Note.svelte';
+    import Cookies from '$lib/components/custom/Cookies.svelte';
+    import Note from '$lib/components/custom/Note.svelte';
+    import Anchor from '$lib/components/custom/Anchor.svelte';
 	
 	let { children } = $props();
 
 </script>
 <div id="top" ></div>
 
-<div class="p-minimal flex flex-col justify-center gap-minimal" >
+<div class="p-minimal flex flex-col justify-center" >
 	<Navbar/>
-	<section class="flex flex-wrap gap-minimal rounded-xl overflow-x-scroll">
-		<Cookies>Low use of Cookies!</Cookies>
-		<Note>The website is currently in test phase!</Note>
-	</section>
-	<main class="border rounded-xl" >
-		{@render children()}
+	<main class="">
+		<section class="flex flex-wrap">
+			<Cookies custom="my-minimal" >Low use of Cookies! <Anchor href="/privacy-policy" >Check!</Anchor></Cookies>
+			<Note >The website is currently in test phase!</Note>
+		</section>
+		<section class="border rounded-xl mt-minimal">
+			{@render children()}
+		</section>
 	</main>
 	<Footer/>
 </div>

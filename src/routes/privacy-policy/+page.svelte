@@ -1,12 +1,12 @@
 <script>
     import Lay from "$lib/components/custom/Lay.svelte";
-    import Main from "$lib/components/custom/Main.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     import { CloudArrowUpOutline, RedoOutline } from "flowbite-svelte-icons";
 </script>
 
 
 
-<Main  custom="flex flex-col justify-center items-center gap-medium">
+<Content  custom="flex flex-col justify-center items-center gap-medium">
     <h1>Privacy Policy</h1>
     <h2>In this case</h2>
             <p>Although this website does not have terms and conditions for use and does not contain a large number of cookies, it is very necessary to address how and for what user data is used on a broad scale. In the context of the web, it is extremely important for most websites to have an idea of ​​what user data to use and for what reasons it is used. Therefore, it is very possible that there are rules and laws for the processing of personal data in different countries, whether in physical or digital media, by individuals or legal entities, public or private and this website is not left out of this, this page was chosen to specifically address this subject.</p>
@@ -27,4 +27,4 @@
         <RedoOutline/><CloudArrowUpOutline/><RedoOutline class="rotate-[180deg]" />
     </div>
     <p>Your data remains in the cloud and is only modified or updated when you refresh your browser page. Ensure more security by making sure that the domain is spelled correctly and that the Hypertext Transfer Protocol ( HTTPS ) is used in its URL.</p>
-</Main>
+</Content>

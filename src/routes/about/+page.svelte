@@ -1,5 +1,5 @@
 <script>
-    import Main from "$lib/components/custom/Main.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
     import Lay from "$lib/components/custom/Lay.svelte";
     import Anchor from "$lib/components/custom/Anchor.svelte";
@@ -7,7 +7,7 @@
 
 
 
-<Main>
+<Content>
     <h1>About the project</h1>
     <Pic alt="About page image" src="https://ucarecdn.com/acb11743-6357-490f-b626-27191bf73e5b/about.png" />
     <h2>Objective</h2>
@@ -26,4 +26,4 @@
         </svelte:fragment>
     </Lay>
     
-</Main>
+</Content>
