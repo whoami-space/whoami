@@ -1,12 +1,10 @@
 <script>
     import { page } from '$app/state';
-    import { Indicator, Spinner } from 'flowbite-svelte';
-    import { AlignLeftOutline, AlignRightOutline, ArrowDownOutline, ArrowUpOutline, CheckOutline, ChevronRightOutline, ClockArrowOutline, HomeOutline, LinkOutline, ListOutline, PlusOutline, RedoOutline } from 'flowbite-svelte-icons';
+    import { ArrowDownOutline, ArrowUpOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
     import ButtonSm from '../custom/ButtonSm.svelte';
-    import Info from '../custom/Info.svelte';
-    import DividerX from './DividerX.svelte';
+    import { blur } from 'svelte/transition';
 
 
 

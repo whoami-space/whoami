@@ -8,6 +8,7 @@
     import Note from '$lib/components/custom/Note.svelte';
     import Anchor from '$lib/components/custom/Anchor.svelte';
     import { DarkMode } from 'flowbite-svelte';
+    import { blur } from 'svelte/transition';
 	
 	let { children } = $props();
 
