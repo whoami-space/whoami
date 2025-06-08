@@ -7,8 +7,6 @@
     import Cookies from '$lib/components/custom/Cookies.svelte';
     import Note from '$lib/components/custom/Note.svelte';
     import Anchor from '$lib/components/custom/Anchor.svelte';
-    import { DarkMode } from 'flowbite-svelte';
-    import { blur } from 'svelte/transition';
 	
 	let { children } = $props();
 
@@ -18,7 +16,7 @@
 
 <div class="p-minimal flex flex-col justify-center" >
 	<Navbar/>
-	<main class="">
+	<main>
 		<section class="flex flex-wrap">
 			<Cookies custom="mt-minimal" >Low use of Cookies! <Anchor href="/privacy-policy" >Check!</Anchor></Cookies>
 			<Note custom="mt-minimal" >The website is currently in test phase! <Anchor href="/overview" >See what's new!</Anchor></Note>

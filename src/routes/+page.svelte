@@ -11,7 +11,11 @@
     
 </script>
 
-<Metadata title="Whoami" description="The space to learn more about yourself" keywords="Whoami, Space, Learn, Self, Tipology, Mind, Psychology" />
+<svelte:head>
+    <Metadata title="Whoami" description="The space to learn more about yourself" keywords="Whoami, Space, Learn, Self, Tipology, Mind, Psychology" />
+</svelte:head>
+
+
 
 
 
@@ -24,7 +28,7 @@
         <div>
             <WomanEarthHugging color1="#393D3F" color2="#6200B3" color3="#6200B3" color4="#6200B3" color5="#E9ECF5" color6="#E9ECF5" />
         </div>
-        <h2>Get to know your <Anchor href="#self" >self</Anchor> and help others to do the same</h2>
+        <h2>Get to know your <Anchor href="#self" >self</Anchor> and <Anchor href="/support" >help others</Anchor> to do the same</h2>
     </div>
     <Hero />
 </Content>

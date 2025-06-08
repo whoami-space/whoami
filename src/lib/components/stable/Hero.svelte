@@ -1,28 +1,37 @@
 <script>
     import { ArrowKeyLeft, Marquee } from "flowbite-svelte";
     import Blockquote from "../custom/Blockquote.svelte";
-    import { CheckCircleSolid, ChevronDoubleDownOutline, EyeSolid } from "flowbite-svelte-icons";
+    import { ArrowUpOutline, CheckCircleSolid, ChevronDoubleDownOutline, ChevronDoubleRightOutline, EyeSolid } from "flowbite-svelte-icons";
     import Pic from "../custom/Pic.svelte";
     import Anchor from "../custom/Anchor.svelte";
     import InlineNavigation from "../custom/InlineNavigation.svelte";
 </script>
 
-    <div class="flex flex-col justify-center items-center from-3 to-1">
-    
-        <!-- <div class="mt-medium relative flex flex-col justify-center items-center">
-            <div class="absolute top-[150px] min-w-[10rem] min-h-[10rem] bg-3 rounded-full text-center text-medium z-2  text-shadow-[1px_1px_0_black] flex justify-start items-center flex-col "><b>Who am i?</b></div>
-            <div class="polka-dots z-1"></div>
-        </div> -->
-        <ChevronDoubleDownOutline class="m-minimal mt-medium w-medium h-medium" />
-        <ChevronDoubleDownOutline class="m-minimal w-medium h-medium opacity-[.6]" />
-        <ChevronDoubleDownOutline class="m-minimal w-medium h-medium opacity-[.3]" />
-        <div class="py-medium" id="self" >
-            <Blockquote  description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/> 
-        </div>  
+    <div class="flex flex-col justify-center items-center gap-minimal">
+        <div class="flex justify-center items-center gap-minimal">
+            <ChevronDoubleRightOutline class="w-medium h-medium" />
+            <b>Get to know yourself better by learning about psychological theories</b>
+        </div>
+        <div class="flex justify-center items-center gap-minimal">
+            <ChevronDoubleRightOutline class="w-medium h-medium" />
+            <b>Everything anonymous, help and be helped without showing your identity</b>
+        </div> 
+        <div class="flex justify-center items-center gap-minimal">
+            <ChevronDoubleRightOutline class="w-medium h-medium" />
+            <b>Be free to explore the human mind without limits!</b>
+        </div>
     </div>
-    
-    <InlineNavigation d1="Overview" d2="About" d3="Go to top" d1link="/overview" d2link="/about" d3link="#top"/>
 
+    <div class="pt-medium"  id="self" >
+        <Blockquote size="medium" description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/> 
+    </div> 
+    
+    
+    <div class="flex flex-col gap-minimal justify-center items-center rounded-xl w-full">
+        <Anchor href="/overview" >See an overview</Anchor>
+        <Anchor href="/about" >Know more about the project</Anchor>
+        <Anchor href="#top" ><div class="flex justify-center items-center">Go to top <ArrowUpOutline/></div></Anchor>
+    </div>
 
 
 <style>

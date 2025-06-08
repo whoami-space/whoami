@@ -1,7 +1,6 @@
 <script>
     import { ChevronRightOutline, ExpandOutline, InboxFullOutline } from "flowbite-svelte-icons";
-    import ButtonLg from "../custom/ButtonLg.svelte";
-    import ButtonSm from "./ButtonSm.svelte";
+    import Button from "./Button.svelte";
     import { Indicator, Spinner } from "flowbite-svelte";
     import Pic from "./Pic.svelte";
     
@@ -19,7 +18,7 @@
             <div class="flex flex-col gap-minimal justify-center items-center" >
                 <h2 class="text-3" >{label}</h2>
                 <a href={link}>
-                    <ButtonSm label="Access" ><ChevronRightOutline class="w-minimal h-minimal" /></ButtonSm>
+                    <Button label="Access" ><ChevronRightOutline class="w-minimal h-minimal" /></Button>
                 </a>
             </div>
             <div>
@@ -34,7 +33,7 @@
 
     <style>
         .load {
-                animation: fadeout 2.5s ease-in forwards;
+                animation: fadeout 2s ease-in forwards;
                 animation-iteration-count: 1;
             }
                 

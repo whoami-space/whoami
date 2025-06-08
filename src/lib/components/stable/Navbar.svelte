@@ -3,7 +3,7 @@
     import { ArrowDownOutline, ArrowUpOutline } from 'flowbite-svelte-icons';
     import { Drawer } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
-    import ButtonSm from '../custom/ButtonSm.svelte';
+    import Button from '../custom/Button.svelte';
     import { blur } from 'svelte/transition';
 
 
@@ -78,15 +78,15 @@
             </a>
             {#if hiddenBackdropTrue}
                 <div >
-                    <ButtonSm onClick={() => (hiddenBackdropTrue = false)} >
+                    <Button onClick={() => (hiddenBackdropTrue = false)} >
                             <ArrowDownOutline class="w-5 h-5" />
-                    </ButtonSm>
+                    </Button>
                 </div>
             {:else}
                 <div>
-                    <ButtonSm onClick={() => (hiddenBackdropTrue = true)} >
+                    <Button onClick={() => (hiddenBackdropTrue = true)} >
                         <ArrowUpOutline class="w-5 h-5" />
-                    </ButtonSm>
+                    </Button>
                 </div>
             {/if}
 </header>

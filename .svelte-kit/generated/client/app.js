@@ -22,12 +22,12 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [3],
 		"/about": [4],
-		"/contact": [5],
-		"/faq": [6],
-		"/overview": [7],
-		"/posts": [8],
-		"/posts/mbti": [9],
-		"/privacy-policy": [10],
+		"/faq": [5],
+		"/overview": [6],
+		"/posts": [7],
+		"/posts/mbti": [8],
+		"/privacy-policy": [9],
+		"/support": [10],
 		"/tests": [11],
 		"/tests/mbti-personality-test": [12,[2]],
 		"/tests/mbti-personality-test/result": [13,[2]]

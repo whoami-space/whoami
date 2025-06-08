@@ -7,11 +7,13 @@
     import { redirect } from "@sveltejs/kit";
     import { writable } from "svelte/store";
 
-    import { Button, List, Modal, P } from "flowbite-svelte";
-    import ButtonSm from "$lib/components/custom/ButtonSm.svelte";
+    import { List, Modal, P } from "flowbite-svelte";
+    
+    import ButtonSm from "$lib/components/custom/Button.svelte";
     import { CheckCircleSolid, BackwardStepSolid, ChevronDoubleRightOutline } from "flowbite-svelte-icons";
     import { Indicator } from "flowbite-svelte";
     import Content from "$lib/components/custom/Content.svelte";
+    import Button from "$lib/components/custom/Button.svelte";
 
 
     let open = $state(false);
@@ -60,7 +62,7 @@
       <h2 class="text-center" >You already started the test, continue answering to check the result</h2>
     {/if}
     
-    <Button class="text-2 bg-3 p-5 font-bold rounded-xl flex justify-center items-center gap-minimal cursor-pointer drop-shadow-[2px_2px_0_white] select-none" on:click={() => (open = true)}>Continue</Button>
+    <Button onClick={() => (open = true)}>Continue</Button>
   </div>
 
   <h2>A soon explanation...</h2>

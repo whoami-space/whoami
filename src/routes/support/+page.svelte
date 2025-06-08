@@ -1,5 +1,5 @@
 <script>
-    import Main from "$lib/components/custom/Content.svelte";
+    import Content from "$lib/components/custom/Content.svelte";
     import Textarea from "$lib/components/stable/Contact.svelte";
 </script>
 

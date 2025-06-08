@@ -1,7 +1,6 @@
 {
 	"/": [],
 	"/about": [],
-	"/contact": [],
 	"/faq": [],
 	"/overview": [],
 	"/posts": [],
@@ -10,6 +9,7 @@
 	"/sitemap.xml": [
 		"src/routes/sitemap.xml/+server.ts"
 	],
+	"/support": [],
 	"/tests": [],
 	"/tests/mbti-personality-test": [
 		"src/routes/tests/mbti-personality-test/+layout.js",
