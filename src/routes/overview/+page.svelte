@@ -8,8 +8,9 @@
     import Content from "$lib/components/custom/Content.svelte";
     import Pic from "$lib/components/custom/Pic.svelte";
     import DividerX from "$lib/components/stable/DividerX.svelte";
-    import { Marquee, ArrowKeyLeft, TabItem, Tabs } from "flowbite-svelte";
-    import { ArrowUpOutline, ChevronDoubleDownOutline, FaceGrinStarsOutline } from "flowbite-svelte-icons";
+    import { Marquee, ArrowKeyLeft, TabItem, Tabs, Badge } from "flowbite-svelte";
+    import { ArrowUpOutline, ChevronDoubleDownOutline, FaceGrinStarsOutline, FilterOutline, SearchOutline } from "flowbite-svelte-icons";
+    import { SmartphoneApplicationFeatures } from "flowbite-svelte-illustrations";
 
     let newResources = [
         {
@@ -48,7 +49,6 @@
             link: "/tests/mbti-personality-test",
         },
     ]
-
  
     
 </script>
@@ -57,10 +57,10 @@
 
 <Content custom="flex flex-col justify-center items-center gap-minimal" >
     
-    <div class="flex flex-col justify-center items-center gap-minimal">
+    <div class="flex flex-col justify-center items-center mb-medium gap-minimal">
+        <SmartphoneApplicationFeatures color1="#393D3F" color2="#6200B3" color3="#6200B3" color4="#6200B3" color5="#E9ECF5" color6="#E9ECF5" />
         <h1>Overview</h1> 
         <h2 >Let's find out what's new!</h2>
-        <FaceGrinStarsOutline class="w-medium h-medium" />
     </div>
     <Tabs defaultClass="flex flex-wrap justify-center items-center gap-minimal m-0" contentClass="bg-1 p-0 m-0" tabStyle="underline">
         <TabItem inactiveClasses="p-minimal text-2 cursor-pointer" activeClasses="bg-1 border p-minimal text-3 rounded-xl" open title="All">

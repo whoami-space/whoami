@@ -4,13 +4,15 @@
     import Lay from "$lib/components/custom/Lay.svelte";
     import Anchor from "$lib/components/custom/Anchor.svelte";
     import DividerX from "$lib/components/stable/DividerX.svelte";
+    import { ManWorkingQuestionMark, WomanRocketFlying } from "flowbite-svelte-illustrations";
 </script>
 
 
 
 <Content>
-    <h1 class="" >About the project</h1>
-    <Pic alt="About page image" src="https://ucarecdn.com/acb11743-6357-490f-b626-27191bf73e5b/about.png" />
+    <WomanRocketFlying color1="#393D3F" color2="#6200B3" color3="#6200B3" color4="#6200B3" color5="#E9ECF5" color6="#E9ECF5" />
+        <h1 class="" >About the project</h1>
+        
     <h2>Objective</h2>
             <p>In short, the objective of this website is to allow greater immersion in self-knowledge to users in the most accessible way possible. And how is this done?   Through tools such as personality tests, through articles covering complex concepts or even through more direct contact if necessary. If you are a psychologist or have knowledge in psychology, you can also collaborate with ideas by <Anchor href="/contact">contacting</Anchor>
             </p>

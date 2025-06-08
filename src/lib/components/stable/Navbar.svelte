@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
-    import { ArrowDownOutline, ArrowUpOutline } from 'flowbite-svelte-icons';
-    import { Drawer } from "flowbite-svelte";
+    import { ArrowDownOutline, ArrowUpOutline, SearchOutline } from 'flowbite-svelte-icons';
+    import { Drawer, Input } from "flowbite-svelte";
     import Anchor from '../custom/Anchor.svelte';
     import Button from '../custom/Button.svelte';
     import { blur } from 'svelte/transition';
@@ -40,13 +40,13 @@
     <div class="rounded-xl flex flex-col justify-center items-center gap-minimal">
             <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
                 {#if page.url.pathname === "/"}
-                    <li class="font-bold" >
+                    <li translate="no" class="font-bold no-translate" >
                         <Anchor onClick={() => (hiddenBackdropTrue = true)} href="/">
                            Home
                         </Anchor>
                     </li>
                 {:else}
-                <li >
+                <li translate="no" class="no-translate" >
                     <Anchor onClick={() => (hiddenBackdropTrue = true)} href="/">
                        Home
                     </Anchor>
