@@ -1,7 +1,7 @@
 <script>
     import { ArrowKeyLeft, Marquee } from "flowbite-svelte";
     import Blockquote from "../custom/Blockquote.svelte";
-    import { ArrowUpOutline, CheckCircleSolid, ChevronDoubleDownOutline, ChevronDoubleRightOutline, EyeSolid } from "flowbite-svelte-icons";
+    import { AngleDownOutline, AngleLeftOutline, AngleRightOutline, ArrowUpOutline, CheckCircleSolid, ChevronDoubleDownOutline, ChevronDoubleRightOutline, EyeSolid } from "flowbite-svelte-icons";
     import Pic from "../custom/Pic.svelte";
     import Anchor from "../custom/Anchor.svelte";
     import InlineNavigation from "../custom/InlineNavigation.svelte";
@@ -9,21 +9,30 @@
 
     <div class="flex flex-col justify-center items-center gap-minimal">
         <div class="flex justify-center items-center gap-minimal">
-            <ChevronDoubleRightOutline class="w-medium h-medium" />
-            <b>Get to know yourself better by learning about psychological theories</b>
+            <AngleLeftOutline class="w-medium h-medium" />
+            <p><b class="text-3" >Anonymous!</b> Learn and collaborate without needing to show off.</p>
+            <AngleRightOutline class="w-medium h-medium" />
         </div>
         <div class="flex justify-center items-center gap-minimal">
-            <ChevronDoubleRightOutline class="w-medium h-medium" />
-            <b>Everything anonymous, help and be helped without showing your identity</b>
-        </div> 
+            <AngleLeftOutline class="w-medium h-medium" />
+            <p><b class="text-3" >Free!</b> Copyright-free and without commercial purposes.</p>
+            <AngleRightOutline class="w-medium h-medium" />
+        </div>
         <div class="flex justify-center items-center gap-minimal">
-            <ChevronDoubleRightOutline class="w-medium h-medium" />
-            <b>Be free to explore the human mind without limits!</b>
+            <AngleLeftOutline class="w-medium h-medium" />
+            <p><b class="text-3" >Safe!</b> Designed to work without data storage.</p>
+            <AngleRightOutline class="w-medium h-medium" />
         </div>
     </div>
 
-    <div class="pt-medium"  id="self" >
-        <Blockquote size="medium" description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/> 
+    <h2>Inspirations</h2>
+
+    <p>Taking inspiration from the psychoanalyst <b class="text-3" >Carl Jung</b>, this site brings a link of doubt and certainty united and intricate as one, because for Carl Jung, the self was the average of the intersection of 2 opposing parts, it is comprehensive and insightful, it is the mixture of factors, it is both union and separation together. This website is designed to bring this vision into practice, even if in a simple way. The objective of this website is to show that even if something is separate and isolated from our minds, it is still part of the whole and, being part of the whole, it influences our lives with a greater frequency than we can imagine!</p>
+
+    <p>Inspired by the reflection on the search for identity, addressed in the song <b class="text-3" >"Wutiwant"</b>, by saraunh0ly, this project was designed to bring the user a more acute perception of themselves, even if this leads them to question their own internal values. In the song "Wutiwant", uncertainty about oneself is recurrent, and it is this uncertainty that makes us have a greater understanding of ourselves. Not knowing who we are is a sign that there is room for us to learn more about ourselves and, by doubting whether we really are a certain way, we will remain aware that the trajectory does not lie and that recurring doubt has created a solid foundation of authenticity so that we can remain firm in life. The repetition of the rhetorical question “Who am I?” in music it reflects the importance of knowing who we are and that to have the real satisfaction of living we need to resolve the enigmatic bonds of our own mind.</p>
+
+    <div class="pt-minimal"  id="self" >
+        <Blockquote size="minimal" description="The Self...embraces ego-consciousness, shadow, anima, and collective unconscious in indeterminable extension. As a totality, the self is a coincidentia oppositorum; it is therefore bright and dark and yet neither." author="Carl Jung"  ocupation="Psychanalist" picture="https://ucarecdn.com/7c344b43-d368-40bc-9ab9-9ae1f817c3f6/cgjung429b1f.jpg"/> 
     </div> 
     
     

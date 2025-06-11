@@ -10,11 +10,11 @@
 
 </script>
   
-  <figure class="flex rounded-xl flex-wrap justify-center items-center gap-minimal text-2 text-medium px-medium">
-    <Blockquote italic={false} alignment="center" class={`flex !font-bold gap-minimal text-2 text-${size}`} >"{description}"</Blockquote>
-    <figcaption class="flex flex-col justify-center items-center gap-minimal p-minimal">
-      <img class="w-medium h-medium rounded-full" alt="Cite Author" src={picture} />
+  <figure class="flex rounded-xl flex-wrap justify-center items-center text-2 text-medium px-medium">
+    <figcaption class="flex flex-col justify-center items-center p-minimal">
+      <img class="w-10 h-10 rounded-full m-2" alt="Cite Author" src={picture} />
       <p class="!font-bold font-medium text-minimal">{author}</p>
       <p class="!font-light font-medium text-minimal">{ocupation}</p>
     </figcaption>
+    <Blockquote italic={false} alignment="center" class={`flex !font-bold gap-minimal text-2 text-${size}`} >"{description}"</Blockquote>  
   </figure>
