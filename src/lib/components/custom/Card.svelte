@@ -3,6 +3,7 @@
     import Button from "./Button.svelte";
     import { Indicator, Spinner } from "flowbite-svelte";
     import Pic from "./Pic.svelte";
+    import "$lib/components/styles/transitions.css"
     
 
     let { link, label } = $props()
@@ -25,7 +26,7 @@
                 <slot/>
             </div>
         </div>
-        <div class="load absolute top-0 left-0 w-[100%] h-[100%] gap-minimal flex flex-col items-center rounded-xl bg-gradient-to-br from-1 to-transparent" >
+        <div class="bg-gradient-to-br from-1 to-transparent load absolute top-0 left-0 w-[100%] h-[100%] gap-minimal flex flex-col items-center rounded-xl bg-gradient-to-br from-1 to-transparent" >
             <Spinner size="4" class="absolute top-minimal left-minimal z-50" /> 
         </div>
     </div>

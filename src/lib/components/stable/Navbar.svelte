@@ -5,6 +5,7 @@
     import Anchor from '../custom/Anchor.svelte';
     import Button from '../custom/Button.svelte';
     import { blur } from 'svelte/transition';
+    import '$lib/components/styles/transitions.css'
 
 
 
@@ -34,10 +35,10 @@
 
   
   
-  <div class="border rounded-xl" >
+  <div class="show-left-load-maximal border rounded-xl" >
     <Drawer transitionType="slide"
  placement="top" class="relative bg-1 flex flex-col gap-minimal justify-center items-center w-full select-none text-3 p-minimal rounded-xl" backdrop={false} bind:hidden={hiddenBackdropTrue}>
-    <div class="rounded-xl flex flex-col justify-center items-center gap-minimal">
+    <div class="show-left-medium rounded-xl flex flex-col justify-center items-center gap-minimal">
             <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
                 {#if page.url.pathname === "/"}
                     <li translate="no" class="font-bold no-translate" >

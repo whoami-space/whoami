@@ -1,7 +1,7 @@
 <script>
     import { ArrowKeyLeft, Marquee } from "flowbite-svelte";
     import Blockquote from "../custom/Blockquote.svelte";
-    import { AngleDownOutline, AngleLeftOutline, AngleRightOutline, ArrowUpOutline, CheckCircleSolid, ChevronDoubleDownOutline, ChevronDoubleRightOutline, EyeSolid } from "flowbite-svelte-icons";
+    import { AngleDownOutline, AngleLeftOutline, AngleRightOutline, ArrowUpOutline, CaretRightOutline, CheckCircleSolid, ChevronDoubleDownOutline, ChevronDoubleRightOutline, ChevronRightOutline, CirclePlusOutline, EyeSolid } from "flowbite-svelte-icons";
     import Pic from "../custom/Pic.svelte";
     import Anchor from "../custom/Anchor.svelte";
     import InlineNavigation from "../custom/InlineNavigation.svelte";
@@ -9,19 +9,16 @@
 
     <div class="flex flex-col justify-center items-center gap-minimal">
         <div class="flex justify-center items-center gap-minimal">
-            <AngleLeftOutline class="w-medium h-medium" />
-            <p><b class="text-3" >Anonymous!</b> Learn and collaborate without needing to show off.</p>
-            <AngleRightOutline class="w-medium h-medium" />
+            <ChevronRightOutline class="w-minimal h-minimal text-3" />
+            <div><b class="text-3" >Anonymous!</b> Learn and collaborate anonymously.</div>
         </div>
         <div class="flex justify-center items-center gap-minimal">
-            <AngleLeftOutline class="w-medium h-medium" />
+            <ChevronRightOutline class="w-minimal h-minimal text-3" />
             <p><b class="text-3" >Free!</b> Copyright-free and without commercial purposes.</p>
-            <AngleRightOutline class="w-medium h-medium" />
         </div>
         <div class="flex justify-center items-center gap-minimal">
-            <AngleLeftOutline class="w-medium h-medium" />
+            <ChevronRightOutline class="w-minimal h-minimal text-3" />
             <p><b class="text-3" >Safe!</b> Designed to work without data storage.</p>
-            <AngleRightOutline class="w-medium h-medium" />
         </div>
     </div>
 

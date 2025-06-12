@@ -1,6 +1,7 @@
 <script>
     import { Indicator, Skeleton, Spinner, TextPlaceholder } from "flowbite-svelte";
     import { ClockOutline } from "flowbite-svelte-icons";
+    import '$lib/components/styles/transitions.css'
 
     const defaultstyle = "p-medium py-maximal overflow-scroll scroll-smooth relative "
     let { custom = "flex flex-col items-center justify-center gap-medium " } = $props();
@@ -18,7 +19,7 @@
 
 <style>
     .load {
-            animation: fadeout 2.5s ease-in forwards;
+            animation: fadeout 3s ease-in forwards;
             animation-iteration-count: 1;
         }
             
