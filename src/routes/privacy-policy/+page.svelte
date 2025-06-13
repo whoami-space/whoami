@@ -8,7 +8,6 @@
 
 
 <Content  custom="flex flex-col justify-center items-center gap-medium">
-    <WomanCyberSecurity color1="#393D3F" color2="#6200B3" color3="#6200B3" color4="#6200B3" color5="#393D3F" color6="#E9ECF5" />
     <h1>Privacy Policy</h1>
     <h2>In this case</h2>
             <p>Although this website does not have terms and conditions for use and does not contain a large number of cookies, it is very necessary to address how and for what user data is used on a broad scale. In the context of the web, it is extremely important for most websites to have an idea of ​​what user data to use and for what reasons it is used. Therefore, it is very possible that there are rules and laws for the processing of personal data in different countries, whether in physical or digital media, by individuals or legal entities, public or private and this website is not left out of this, this page was chosen to specifically address this subject.</p>

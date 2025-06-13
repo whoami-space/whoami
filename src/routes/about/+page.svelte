@@ -10,8 +10,7 @@
 
 
 <Content>
-    <WomanRocketFlying color1="#393D3F" color2="#6200B3" color3="#6200B3" color4="#6200B3" color5="#E9ECF5" color6="#E9ECF5" />
-        <h1 class="" >About the project</h1>
+    <h1 class="" >About the project</h1>
         
     <h2>Objective</h2>
             <p>In short, the objective of this website is to allow greater immersion in self-knowledge to users in the most accessible way possible. And how is this done?   Through tools such as personality tests, through articles covering complex concepts or even through more direct contact if necessary. If you are a psychologist or have knowledge in psychology, you can also collaborate with ideas by <Anchor href="/contact">contacting</Anchor>

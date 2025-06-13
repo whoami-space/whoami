@@ -38,6 +38,7 @@ declare module '$env/static/private' {
 	export const NIX_PATH: string;
 	export const CUSTOM_ENV_ENABLED: string;
 	export const FIREBASE_DEPLOY_AGENT: string;
+	export const DART_CODE_CONFIGURATION_PATH: string;
 	export const WEB_HOST: string;
 	export const ENABLE_CAPRA_GENKIT_TOKEN_LOGGING: string;
 	export const HOME: string;
@@ -125,6 +126,7 @@ declare module '$env/dynamic/private' {
 		NIX_PATH: string;
 		CUSTOM_ENV_ENABLED: string;
 		FIREBASE_DEPLOY_AGENT: string;
+		DART_CODE_CONFIGURATION_PATH: string;
 		WEB_HOST: string;
 		ENABLE_CAPRA_GENKIT_TOKEN_LOGGING: string;
 		HOME: string;
