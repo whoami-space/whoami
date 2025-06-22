@@ -18,26 +18,22 @@
             href: "/overview"
         },
         {
-            label: "Posts",
-            href: "/posts"
-        },
-        {
-            label: "Tests",
-            href: "/tests"
-        },
-        {
             label: "About",
             href: "/about"
+        },
+        {
+            label: "Notes",
+            href: "#notes"
         },
     ]
 
   </script>
 
-  <div class="absolute top-0 left-0 border show-left-load-maximal"></div>
 
-  <div class="border rounded-xl mt-[2px]" >
+
+  <div class="border mb-minimal rounded-xl" >
     <Drawer transitionType="slide"
- placement="top" class="relative bg-1 flex flex-col gap-minimal justify-center items-center w-full select-none text-3 p-minimal rounded-xl" backdrop={false} bind:hidden={hiddenBackdropTrue}>
+ placement="top" class="relative bg-transparent flex flex-col gap-minimal justify-center items-center w-full select-none text-3 p-minimal rounded-xl " backdrop={false} bind:hidden={hiddenBackdropTrue}>
     <div class="rounded-xl flex flex-col justify-center items-center gap-minimal">
          <div class="show-medium">
             <ul class="w-full flex flex-wrap rounded-xl justify-center items-center gap-minimal">
@@ -75,7 +71,7 @@
 </Drawer>
   </div>
 
-<header class="flex w-full p-minimal justify-between items-center gap-minimal text-3 border rounded-xl mt-minimal" >
+<header class="flex w-full p-minimal justify-between items-center gap-minimal text-3 border rounded-xl" >
             <a href="/" class="show-maximal flex gap-2 justify-center items-center p-minimal rounded-xl border">
                 <b>whoami.space</b>
             </a>
@@ -93,6 +89,9 @@
                 </div>
             {/if}
 </header>
+
+
+
 
 
 
