@@ -72,7 +72,7 @@
   </div>
 
 <header class="flex w-full p-minimal justify-between items-center gap-minimal text-3 border rounded-xl" >
-            <a href="/" class="show-maximal flex gap-2 justify-center items-center p-minimal rounded-xl border">
+            <a href="/" class="show-maximal flex gap-2 justify-center items-center p-minimal rounded-xl border active:scale-[.8]">
                 <b>whoami.space</b>
             </a>
             {#if hiddenBackdropTrue}

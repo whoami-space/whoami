@@ -9,14 +9,15 @@
     import Anchor from '$lib/components/custom/Anchor.svelte';
     import '$lib/components/styles/transitions.css';
     import { ClockArrowOutline } from 'flowbite-svelte-icons';
+    import { writable } from 'svelte/store';
 	
 	let { children } = $props();
 
 	let reload = () => {
 		window.location.reload()
 	}
-
 </script>
+
 <div id="top" ></div>
 
 <div class="p-minimal flex flex-col justify-center overflow-hidden" >
@@ -28,14 +29,14 @@
 		<section class="border rounded-xl mt-minimal">
 			{@render children()}
 		</section>
-		<section id="notes" class="flex gap-medium my-minimal show-medium">
+		<section id="notes" class="flex flex-col gap-minimal my-minimal show-medium">
 			<Note >The website is currently in test phase! <Anchor href="/overview" >See what's new!</Anchor></Note>
 			<Note >MBTI Personality Test is in building... </Note>
 			<Note >Overview Page is Already <Anchor href="/overview" >Access it!</Anchor></Note>
-			<div on:click={reload()} class="w-full flex gap-minimal justify-center items-center border rounded-xl p-minimal text-3 cursor-pointer" >
-				<b>Reload Notes</b>
+			<a href="#top" on:click={reload()} class="w-full flex gap-minimal justify-center items-center border rounded-xl p-minimal text-3 cursor-pointer active:scale-[.8]" >
+				<b>Reload the page</b>
 				<ClockArrowOutline />
-			</div>
+			</a>
 		</section>
 	</main>
 	<Footer/>
