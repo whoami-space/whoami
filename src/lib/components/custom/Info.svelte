@@ -1,12 +1,13 @@
 <script>
     import { Tooltip } from "flowbite-svelte";
-    import { InfoCircleOutline } from "flowbite-svelte-icons";
+    import { InboxFullSolid, InfoCircleOutline, InfoCircleSolid } from "flowbite-svelte-icons";
     let {tooltip, placement} = $props()
+    import "$lib/components/styles/transitions.css";
 </script>
   
 
 
-<div >
-    <InfoCircleOutline class="text-1 bg-3 rounded-xl w-5 p-[2px] h-5 translate-y-[1px]" />
+<div class="z-40" >
+    <InfoCircleOutline class="hover:opacity-[.5] text-3 rounded-full w-6 h-6 translate-y-[2px]" />
     <Tooltip placement={placement} color="gray" >{tooltip}</Tooltip>
 </div>

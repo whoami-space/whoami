@@ -5,7 +5,7 @@
     import Anchor from '../custom/Anchor.svelte';
     import Button from '../custom/Button.svelte';
     import { blur } from 'svelte/transition';
-    import '$lib/components/styles/transitions.css'
+    import "$lib/components/styles/transitions.css";
 
 
 
@@ -72,17 +72,17 @@
   </div>
 
 <header class="flex w-full p-minimal justify-between items-center gap-minimal text-3 border rounded-xl" >
-            <a href="/" class="show-maximal flex gap-2 justify-center items-center p-minimal rounded-xl border active:scale-[.8]">
+            <a href="/" class="show-maximal flex gap-2 justify-center items-center p-minimal rounded-xl border active:scale-[.8] hover:opacity-[.5]">
                 <b>whoami.space</b>
             </a>
             {#if hiddenBackdropTrue}
-                <div class="show-maximal" >
+                <div >
                     <Button onClick={() => (hiddenBackdropTrue = false)} >
                             <ArrowDownOutline class="w-5 h-5" />
                     </Button>
                 </div>
             {:else}
-                <div class="show-maximal" >
+                <div>
                     <Button onClick={() => (hiddenBackdropTrue = true)} >
                         <ArrowUpOutline class="w-5 h-5" />
                     </Button>

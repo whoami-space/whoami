@@ -10,7 +10,7 @@
 <div class={defaultstyle + custom } >
     <Indicator color="none" class="absolute left-minimal top-minimal border w-minimal h-minimal" />   
     <slot/>
-    <div class="load absolute top-0 left-0 w-[100%] h-[100%] gap-minimal flex flex-col items-center rounded-xl bg-gradient-to-br from-1 to-transparent" >
+    <div class="load absolute top-0 left-0 w-[100%] h-[100%] gap-minimal flex flex-col items-center rounded-xl bg-gradient-to-r from-1 to-transparent" >
         <Spinner size="4" class="absolute top-minimal left-minimal z-50" /> 
     </div>
 </div>

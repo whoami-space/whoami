@@ -5,17 +5,16 @@
 	import Loader from '$lib/components/stable/Loader.svelte';
     import { page } from '$app/state';
     import Cookies from '$lib/components/custom/Cookies.svelte';
-    import Note from '$lib/components/custom/Note.svelte';
+    import Log from '$lib/components/custom/Log.svelte';
     import Anchor from '$lib/components/custom/Anchor.svelte';
     import '$lib/components/styles/transitions.css';
-    import { ClockArrowOutline } from 'flowbite-svelte-icons';
+    import { ArrowUpOutline, ClockArrowOutline } from 'flowbite-svelte-icons';
     import { writable } from 'svelte/store';
+    import { TabItem, Tabs } from 'flowbite-svelte';
+    import Info from '$lib/components/custom/Info.svelte';
 	
 	let { children } = $props();
 
-	let reload = () => {
-		window.location.reload()
-	}
 </script>
 
 <div id="top" ></div>
@@ -29,14 +28,24 @@
 		<section class="border rounded-xl mt-minimal">
 			{@render children()}
 		</section>
-		<section id="notes" class="flex flex-col gap-minimal my-minimal show-medium">
-			<Note >The website is currently in test phase! <Anchor href="/overview" >See what's new!</Anchor></Note>
-			<Note >MBTI Personality Test is in building... </Note>
-			<Note >Overview Page is Already <Anchor href="/overview" >Access it!</Anchor></Note>
-			<a href="#top" on:click={reload()} class="w-full flex gap-minimal justify-center items-center border rounded-xl p-minimal text-3 cursor-pointer active:scale-[.8]" >
-				<b>Reload the page</b>
-				<ClockArrowOutline />
-			</a>
+		<section id="log" class="border p-medium flex flex-col gap-minimal my-minimal rounded-xl show-medium">
+			<h3 class="text-medium">Log ( Last Changes )</h3>
+			<div class="flex justify-center items-center opacity-[.5]">
+                <div >
+                    <ArrowUpOutline/>
+                </div>
+                <p>Date</p>
+            </div>
+			<Tabs defaultClass="flex flex-wrap justify-center items-center gap-minimal m-0" contentClass="bg-1 p-0 m-0" tabStyle="underline">
+				<TabItem open inactiveClasses="p-minimal text-2 cursor-pointer" activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="1">
+					<div class="bg-1 flex flex-col gap-minimal" >
+						<Log date="2025/06/25" >MBTI Personality Test is in building... </Log>
+						<Log date="2025/06/20" >Overview Page is Already <Anchor href="/overview" >Access it!</Anchor></Log>
+					</div>
+				</TabItem>
+				<TabItem disabled inactiveClasses="p-minimal text-2 cursor-pointer opacity-[.5]" activeClasses="bg-1 border p-minimal text-3 rounded-xl" title="...">
+				</TabItem>
+			</Tabs>
 		</section>
 	</main>
 	<Footer/>
